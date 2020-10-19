@@ -14,9 +14,12 @@
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "dependencies": {
-    "gatsby": "^2.24.66",
+    "gatsby": "^2.24.80",
+    "gatsby-plugin-react-helmet": "^3.3.12",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
+    "typed.js": "^2.0.11"
   },
   "devDependencies": {
     "prettier": "2.1.2"
