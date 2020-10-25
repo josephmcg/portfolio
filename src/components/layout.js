@@ -1,8 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
+import "../styles/global.css"
 
-export default function Layout({ children, data }) {
+import logo from "../assets/logo.svg"
+
+export default function Layout({ children }) {
   return (
     <>
       <Helmet>
@@ -18,10 +21,11 @@ export default function Layout({ children, data }) {
           crossorigin="anonymous"
         ></script>
       </Helmet>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+
+      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
-            Joe McGrath
+            <img src={logo} width="250" alt="Joe Logo" />
           </Link>
           <button
             className="navbar-toggler"
@@ -39,12 +43,24 @@ export default function Layout({ children, data }) {
               <Link className="nav-link" to="/">
                 Home
               </Link>
+              <Link className="nav-link" to="/about">
+                About
+              </Link>
+              <Link className="nav-link" to="/projects">
+                Projects
+              </Link>
+              <Link className="nav-link" to="/contact">
+                Contact
+              </Link>
             </ul>
           </div>
         </div>
       </nav>
 
-      <div className="container">{children}</div>
+      <main className="container">{children}</main>
+      <footer>
+        <div className="container">Joe McGrath</div>
+      </footer>
     </>
   )
 }
