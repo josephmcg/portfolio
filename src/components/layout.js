@@ -10,19 +10,19 @@ export default function Layout({ children }) {
     <>
       <Helmet>
         <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
           rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css"
-          integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
           crossorigin="anonymous"
         ></link>
         <script
-          src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js"
-          integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD"
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
           crossorigin="anonymous"
         ></script>
       </Helmet>
 
-      <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/">
             <img src={logo} width="250" alt="Joe Logo" />
@@ -43,13 +43,13 @@ export default function Layout({ children }) {
               <Link className="nav-link" to="/">
                 Home
               </Link>
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="#about">
                 About
               </Link>
-              <Link className="nav-link" to="/projects">
+              <Link className="nav-link" to="#projects">
                 Projects
               </Link>
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link" to="#contact">
                 Contact
               </Link>
             </ul>
@@ -57,7 +57,9 @@ export default function Layout({ children }) {
         </div>
       </nav>
 
-      <main className="container">{children}</main>
+      <main className="container">
+        {children} <hr />
+      </main>
       <footer>
         <div className="container">Joe McGrath</div>
       </footer>

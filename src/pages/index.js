@@ -30,28 +30,67 @@ export default function Home() {
         <title>Joe McGrath | Web Developer</title>
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
-
+      <div className="text-center">
+        <img className="rounded-circle img-fluid" src="" alt="Joe" />
+      </div>
       <h1 className="text-center">
         <span id="typed"></span>
       </h1>
-
       <h2 className="text-center">
-        Hi. I'm Joe, Web Developer with {years} years of commercial experience.
+        with {years} years of commercial experience.
       </h2>
 
-      <Link to="/contact" className="btn btn-primary">
-        Contact
-      </Link>
+      <p id="about">I like to rock the party</p>
 
-      <img className="rounded-circle img-fluid" src="" alt="Joe" />
-
-      <hr />
-
+      <h2 id="skills">Skills</h2>
       <div className="row">
-        <div className="col-sm-4">About</div>
-        <div className="col-sm-4">Skills</div>
-        <div className="col-sm-4">Projects</div>
+        <div className="col">
+          <h4>Front-End</h4>
+          HTML/CSS/JavaScript, React, Bootstrap, jQuery, Drupal, Gatsby
+        </div>
+        <div className="col">
+          <h4>Back-end & Programming</h4>
+          Node.js, PHP, Java Database: SQL, PostgreSQL, MySQL, MongoDB
+        </div>
+        <div className="col">
+          Versioning and other tools: Git, Jira, Jenkins, Google Analytics,
+          Google Tag Manager, Subversion, Sharepoint, Netlify
+        </div>
       </div>
+      <h2 id="projects">Projects</h2>
+      <h3>Professional</h3>
+      <h3>Personal</h3>
+      <h2 id="contact">Contact Me</h2>
+      <form>
+        <div className="form-floating mb-3">
+          <input
+            id="name"
+            className="form-control"
+            type="text"
+            placeholder="name"
+          />
+          <label htmlFor="name">Name</label>
+        </div>
+
+        <div className="form-floating mb-3">
+          <input
+            id="email"
+            className="form-control"
+            type="email"
+            placeholder="email"
+          />
+          <label htmlFor="email">Email</label>
+        </div>
+
+        <div className="form-floating">
+          <textarea
+            id="comments"
+            className="form-control"
+            placeholder="comments"
+          ></textarea>
+          <label htmlFor="comments">Comments</label>
+        </div>
+      </form>
     </Layout>
   )
 }

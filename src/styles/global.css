@@ -1,8 +1,7 @@
 html {
-  scroll-padding-top: 65px;
   scroll-behavior: smooth;
 }
 
-main {
-  padding-top: 70px;
+#comments {
+  min-height: 7em;
 }
