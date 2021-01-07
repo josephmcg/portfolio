@@ -26,7 +26,7 @@ export default function Layout({ children }) {
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#___gatsby">
-            <img src={logo} width="250" alt="Joe Logo" />
+            <img src={logo} width="250" alt="Joe McGrath" />
           </a>
           <button
             className="navbar-toggler"

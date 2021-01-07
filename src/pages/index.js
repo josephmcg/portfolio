@@ -18,7 +18,7 @@ export default function Home() {
 
   useEffect(() => {
     new Typed("#typed", options)
-  })
+  }, []) // blank dependency so it only runs once
 
   let years = new Date().getFullYear() - 2016
 
@@ -30,7 +30,7 @@ export default function Home() {
         <link rel="canonical" href="http://mysite.com/example" />
       </Helmet>
       <div className="text-center">
-        <img className="rounded-circle img-fluid" src="" alt="Joe" />
+        <img className="rounded-circle img-fluid" src="" alt="" />
       </div>
       <h1 className="text-center">
         <span id="typed"></span>
@@ -45,37 +45,40 @@ export default function Home() {
       <div className="row">
         <div className="col">
           <h3>Front-End</h3>
-          <span class="badge rounded-pill bg-primary">HTML5</span>
-          <span class="badge rounded-pill bg-primary">CSS3</span>
-          <span class="badge rounded-pill bg-primary">JavaScript</span>
-          <span class="badge rounded-pill bg-primary">React</span>
-          <span class="badge rounded-pill bg-primary">Bootstrap</span>
-          <span class="badge rounded-pill bg-primary">jQuery</span>
-          <span class="badge rounded-pill bg-primary">Drupal</span>
-          <span class="badge rounded-pill bg-primary">Gatsby</span>
+          <span className="badge rounded-pill bg-primary">HTML5</span>
+          <span className="badge rounded-pill bg-primary">CSS3</span>
+          <span className="badge rounded-pill bg-primary">JavaScript</span>
+          <span className="badge rounded-pill bg-primary">React</span>
+          <span className="badge rounded-pill bg-primary">Bootstrap</span>
+          <span className="badge rounded-pill bg-primary">jQuery</span>
+          <span className="badge rounded-pill bg-primary">Drupal</span>
+          <span className="badge rounded-pill bg-primary">Gatsby</span>
         </div>
         <div className="col">
           <h3>Back-end & Programming</h3>
-          <span class="badge rounded-pill bg-primary">Node.js</span>
-          <span class="badge rounded-pill bg-primary">PHP</span>
-          <span class="badge rounded-pill bg-primary"> Java</span>
+          <span className="badge rounded-pill bg-primary">Node.js</span>
+          <span className="badge rounded-pill bg-primary">PHP</span>
+          <span className="badge rounded-pill bg-primary">Java</span>
 
           <h3>Database</h3>
-          <span class="badge rounded-pill bg-primary">SQL</span>
-          <span class="badge rounded-pill bg-primary"> PostgreSQL</span>
-          <span class="badge rounded-pill bg-primary"></span>
-          <span class="badge rounded-pill bg-primary">MySQL</span>
-          <span class="badge rounded-pill bg-primary">MongoDB</span>
+          <span className="badge rounded-pill bg-primary">SQL</span>
+          <span className="badge rounded-pill bg-primary">PostgreSQL</span>
+          <span className="badge rounded-pill bg-primary">MySQL</span>
+          <span className="badge rounded-pill bg-primary">MongoDB</span>
         </div>
         <div className="col">
           <h3>Versioning and other tools</h3>
-          <span class="badge rounded-pill bg-primary">Git</span>
-          <span class="badge rounded-pill bg-primary">Jira</span>
-          <span class="badge rounded-pill bg-primary">Jenkins</span>
-          <span class="badge rounded-pill bg-primary"> Google Analytics</span>
-          <span class="badge rounded-pill bg-primary">Google Tag Manager</span>
-          <span class="badge rounded-pill bg-primary">Subversion</span>
-          <span class="badge rounded-pill bg-primary">Netlify</span>
+          <span className="badge rounded-pill bg-primary">Git</span>
+          <span className="badge rounded-pill bg-primary">Jira</span>
+          <span className="badge rounded-pill bg-primary">Jenkins</span>
+          <span className="badge rounded-pill bg-primary">
+            Google Analytics
+          </span>
+          <span className="badge rounded-pill bg-primary">
+            Google Tag Manager
+          </span>
+          <span className="badge rounded-pill bg-primary">Subversion</span>
+          <span className="badge rounded-pill bg-primary">Netlify</span>
         </div>
       </div>
       <h2 id="projects">Projects</h2>
