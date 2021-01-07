@@ -2,7 +2,6 @@ import React, { useEffect } from "react"
 import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import Typed from "typed.js"
-import { Link } from "gatsby"
 
 export default function Home() {
   let options = {
@@ -45,16 +44,38 @@ export default function Home() {
       <h2 id="skills">Skills</h2>
       <div className="row">
         <div className="col">
-          <h4>Front-End</h4>
-          HTML/CSS/JavaScript, React, Bootstrap, jQuery, Drupal, Gatsby
+          <h3>Front-End</h3>
+          <span class="badge rounded-pill bg-primary">HTML5</span>
+          <span class="badge rounded-pill bg-primary">CSS3</span>
+          <span class="badge rounded-pill bg-primary">JavaScript</span>
+          <span class="badge rounded-pill bg-primary">React</span>
+          <span class="badge rounded-pill bg-primary">Bootstrap</span>
+          <span class="badge rounded-pill bg-primary">jQuery</span>
+          <span class="badge rounded-pill bg-primary">Drupal</span>
+          <span class="badge rounded-pill bg-primary">Gatsby</span>
         </div>
         <div className="col">
-          <h4>Back-end & Programming</h4>
-          Node.js, PHP, Java Database: SQL, PostgreSQL, MySQL, MongoDB
+          <h3>Back-end & Programming</h3>
+          <span class="badge rounded-pill bg-primary">Node.js</span>
+          <span class="badge rounded-pill bg-primary">PHP</span>
+          <span class="badge rounded-pill bg-primary"> Java</span>
+
+          <h3>Database</h3>
+          <span class="badge rounded-pill bg-primary">SQL</span>
+          <span class="badge rounded-pill bg-primary"> PostgreSQL</span>
+          <span class="badge rounded-pill bg-primary"></span>
+          <span class="badge rounded-pill bg-primary">MySQL</span>
+          <span class="badge rounded-pill bg-primary">MongoDB</span>
         </div>
         <div className="col">
-          Versioning and other tools: Git, Jira, Jenkins, Google Analytics,
-          Google Tag Manager, Subversion, Sharepoint, Netlify
+          <h3>Versioning and other tools</h3>
+          <span class="badge rounded-pill bg-primary">Git</span>
+          <span class="badge rounded-pill bg-primary">Jira</span>
+          <span class="badge rounded-pill bg-primary">Jenkins</span>
+          <span class="badge rounded-pill bg-primary"> Google Analytics</span>
+          <span class="badge rounded-pill bg-primary">Google Tag Manager</span>
+          <span class="badge rounded-pill bg-primary">Subversion</span>
+          <span class="badge rounded-pill bg-primary">Netlify</span>
         </div>
       </div>
       <h2 id="projects">Projects</h2>
