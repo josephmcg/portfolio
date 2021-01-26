@@ -6,3 +6,7 @@ html {
 #comments {
   min-height: 7em;
 }
+
+.badge {
+  display: flex;
+}

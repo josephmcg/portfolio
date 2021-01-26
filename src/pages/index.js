@@ -45,22 +45,21 @@ export default function Home() {
       <div className="row">
         <div className="col">
           <h3>Front-End</h3>
-          <span className="badge rounded-pill bg-primary">HTML5</span>
-          <span className="badge rounded-pill bg-primary">CSS3</span>
+          <span className="badge rounded-pill bg-primary">HTML</span>
+          <span className="badge rounded-pill bg-primary">CSS</span>
           <span className="badge rounded-pill bg-primary">JavaScript</span>
           <span className="badge rounded-pill bg-primary">React</span>
           <span className="badge rounded-pill bg-primary">Bootstrap</span>
           <span className="badge rounded-pill bg-primary">jQuery</span>
           <span className="badge rounded-pill bg-primary">Drupal</span>
           <span className="badge rounded-pill bg-primary">Gatsby</span>
+          <span className="badge rounded-pill bg-primary">D3</span>
         </div>
         <div className="col">
           <h3>Back-end & Programming</h3>
           <span className="badge rounded-pill bg-primary">Node.js</span>
           <span className="badge rounded-pill bg-primary">PHP</span>
           <span className="badge rounded-pill bg-primary">Java</span>
-
-          <h3>Database</h3>
           <span className="badge rounded-pill bg-primary">SQL</span>
           <span className="badge rounded-pill bg-primary">PostgreSQL</span>
           <span className="badge rounded-pill bg-primary">MySQL</span>
@@ -85,7 +84,7 @@ export default function Home() {
       <h3>Professional</h3>
       <h3>Personal</h3>
       <h2 id="contact">Contact Me</h2>
-      <form>
+      <form name="contact-joe" netlify="true">
         <div className="form-floating mb-3">
           <input
             id="name"
@@ -106,7 +105,7 @@ export default function Home() {
           <label htmlFor="email">Email</label>
         </div>
 
-        <div className="form-floating">
+        <div className="form-floating mb-3">
           <textarea
             id="comments"
             className="form-control"
@@ -114,6 +113,9 @@ export default function Home() {
           ></textarea>
           <label htmlFor="comments">Comments</label>
         </div>
+        <button class="btn btn-primary form-control" type="submit">
+          Submit
+        </button>
       </form>
     </Layout>
   )
