@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet"
 import "../styles/style.scss"
 import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
 
-import logo from "../assets/logo.svg"
+import logo from "../../static/logo.png"
 
 export default function Layout({ children }) {
   return (
@@ -37,7 +37,7 @@ export default function Layout({ children }) {
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div className="container-fluid">
           <a className="navbar-brand" href="#___gatsby">
-            <img src={logo} width="250" alt="Joe McGrath" />
+            <img src={logo} alt="Joe McGrath" />
           </a>
           <button
             className="navbar-toggler"
