@@ -42,47 +42,9 @@ export default function Home() {
       <p id="about">I like to rock the party</p>
 
       <h2 id="skills">Skills</h2>
-      <div className="row">
-        <div className="col">
-          <h3>Front-End</h3>
-          <span className="badge rounded-pill bg-primary">HTML</span>
-          <span className="badge rounded-pill bg-primary">CSS</span>
-          <span className="badge rounded-pill bg-primary">JavaScript</span>
-          <span className="badge rounded-pill bg-primary">React</span>
-          <span className="badge rounded-pill bg-primary">Bootstrap</span>
-          <span className="badge rounded-pill bg-primary">jQuery</span>
-          <span className="badge rounded-pill bg-primary">Drupal</span>
-          <span className="badge rounded-pill bg-primary">Gatsby</span>
-          <span className="badge rounded-pill bg-primary">D3</span>
-        </div>
-        <div className="col">
-          <h3>Back-end & Programming</h3>
-          <span className="badge rounded-pill bg-primary">Node.js</span>
-          <span className="badge rounded-pill bg-primary">PHP</span>
-          <span className="badge rounded-pill bg-primary">Java</span>
-          <span className="badge rounded-pill bg-primary">SQL</span>
-          <span className="badge rounded-pill bg-primary">PostgreSQL</span>
-          <span className="badge rounded-pill bg-primary">MySQL</span>
-          <span className="badge rounded-pill bg-primary">MongoDB</span>
-        </div>
-        <div className="col">
-          <h3>Versioning and other tools</h3>
-          <span className="badge rounded-pill bg-primary">Git</span>
-          <span className="badge rounded-pill bg-primary">Jira</span>
-          <span className="badge rounded-pill bg-primary">Jenkins</span>
-          <span className="badge rounded-pill bg-primary">
-            Google Analytics
-          </span>
-          <span className="badge rounded-pill bg-primary">
-            Google Tag Manager
-          </span>
-          <span className="badge rounded-pill bg-primary">Subversion</span>
-          <span className="badge rounded-pill bg-primary">Netlify</span>
-        </div>
-      </div>
+
       <h2 id="projects">Projects</h2>
-      <h3>Professional</h3>
-      <h3>Personal</h3>
+      <p>Insert projects here</p>
       <h2 id="contact">Contact Me</h2>
       <form name="contact-joe" netlify="true">
         <div className="form-floating mb-3">
@@ -113,7 +75,7 @@ export default function Home() {
           ></textarea>
           <label htmlFor="comments">Comments</label>
         </div>
-        <button class="btn btn-primary form-control" type="submit">
+        <button className="btn btn-primary form-control" type="submit">
           Submit
         </button>
       </form>
