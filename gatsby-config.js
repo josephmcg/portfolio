@@ -9,5 +9,9 @@ module.exports = {
     title: `Joe McGrath`,
     description: "test",
   },
-  plugins: [`gatsby-plugin-react-helmet`, `gatsby-plugin-sass`],
+  plugins: [
+    `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
+    "gatsby-plugin-use-dark-mode",
+  ],
 }

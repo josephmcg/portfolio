@@ -4,6 +4,8 @@ import { Helmet } from "react-helmet"
 import "../styles/style.scss"
 import "bootstrap"
 
+import DarkModeToggle from "./darkButton"
+
 import logo from "../../static/logo.png"
 
 export default function Layout({ children }) {
@@ -41,7 +43,7 @@ export default function Layout({ children }) {
             href="#___gatsby"
           >
             <img src={logo} className="d-flex" alt="" />
-            <div className="logo-name d-flex"> Joe McGrath</div>
+            <div className="logo-name d-flex">Joe McGrath</div>
           </a>
           <button
             className="navbar-toggler"
@@ -78,6 +80,9 @@ export default function Layout({ children }) {
                 <a className="nav-link" href="#contact">
                   Contact
                 </a>
+              </li>
+              <li>
+                <DarkModeToggle> </DarkModeToggle>
               </li>
             </ul>
           </div>
