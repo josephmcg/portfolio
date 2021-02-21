@@ -2,7 +2,7 @@ import React from "react"
 // import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import "../styles/style.scss"
-import "../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+import "bootstrap"
 
 import logo from "../../static/logo.png"
 
@@ -36,8 +36,12 @@ export default function Layout({ children }) {
 
       <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#___gatsby">
-            <img src={logo} alt="Joe McGrath" />
+          <a
+            className="navbar-brand d-flex align-items-center"
+            href="#___gatsby"
+          >
+            <img src={logo} className="d-flex" alt="" />
+            <div className="logo-name d-flex"> Joe McGrath</div>
           </a>
           <button
             className="navbar-toggler"
@@ -50,8 +54,11 @@ export default function Layout({ children }) {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav mr-auto mb-2 mb-lg-0">
+          <div
+            className="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul className="navbar-nav mb-2 mb-lg-0">
               <li>
                 <a className="nav-link" href="#___gatsby">
                   Home
