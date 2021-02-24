@@ -89,11 +89,14 @@ export default function Layout({ children }) {
         </div>
       </nav>
 
-      <main className="container">
-        {children} <hr />
-      </main>
+      <main>{children}</main>
       <footer>
-        <div className="container">Joe McGrath</div>
+        <section className="container d-flex">
+          <div className="d-flex">test</div>
+          <div className="d-flex">
+            Copyright © 2021 Joe McGrath. All rights reserved.
+          </div>
+        </section>
       </footer>
     </>
   )
