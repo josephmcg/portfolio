@@ -20,7 +20,10 @@ export default function Home() {
     new Typed("#typed", options)
   }, []) // blank dependency so it only runs once
 
-  let years = new Date().getFullYear() - 2016
+  let startDate = new Date("05/16/2016")
+
+  let years =
+    (new Date().getTime() - startDate.getTime()) / (1000 * 3600 * 24) / 365
 
   return (
     <Layout>
@@ -32,13 +35,13 @@ export default function Home() {
       <div className="gradient">
         <div className="container">
           <div className="row">
-            <div className="col-sm-8">
+            <div className="col-lg-8">
               <h1>
                 <span id="typed"></span>
               </h1>
               <h2>with {years} years of commercial experience.</h2>
             </div>
-            <div className="col-sm-4">
+            <div className="col-lg-4">
               <div className="text-center">
                 <img className="rounded-circle img-fluid" src="" alt="" />
               </div>

@@ -15,7 +15,7 @@ export default () => {
         darkMode.toggle()
       }}
       checked={darkMode.value}
-      size={80}
+      size={75}
     />
   )
 }

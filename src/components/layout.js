@@ -36,7 +36,7 @@ export default function Layout({ children }) {
         <meta name="theme-color" content="#ffffff" />
       </Helmet>
 
-      <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <nav className="navbar navbar-expand-sm sticky-top">
         <div className="container-fluid">
           <a
             className="navbar-brand d-flex align-items-center"
@@ -60,7 +60,7 @@ export default function Layout({ children }) {
             className="collapse navbar-collapse justify-content-end"
             id="navbarNav"
           >
-            <ul className="navbar-nav mb-2 mb-lg-0">
+            <ul className="navbar-nav mb-2 mb-sm-0">
               <li>
                 <a className="nav-link" href="#___gatsby">
                   Home
@@ -90,10 +90,10 @@ export default function Layout({ children }) {
       </nav>
 
       <main>{children}</main>
-      <footer>
+      <footer className="d-flex">
         <section className="container d-flex">
           <div className="d-flex">test</div>
-          <div className="d-flex">
+          <div className="d-flex copyright">
             Copyright © 2021 Joe McGrath. All rights reserved.
           </div>
         </section>
