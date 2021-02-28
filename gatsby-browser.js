@@ -1,2 +1,2 @@
 import "bootstrap"
-import "@popperjs"
+import "@popperjs/core/dist/umd/popper.min.js"
