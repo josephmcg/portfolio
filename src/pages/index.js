@@ -22,8 +22,16 @@ export default function Home() {
 
   let startDate = new Date("05/16/2016")
 
-  let years =
+  let years = round(
     (new Date().getTime() - startDate.getTime()) / (1000 * 3600 * 24) / 365
+  )
+
+  // rounds to nearest .5 years
+  function round(x) {
+    x = x * 10
+    x = Math.floor(x / 5) * 5
+    return x / 10
+  }
 
   return (
     <Layout>

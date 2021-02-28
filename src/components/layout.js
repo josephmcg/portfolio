@@ -92,7 +92,7 @@ export default function Layout({ children }) {
       <main>{children}</main>
       <footer className="d-flex">
         <section className="container d-flex">
-          <div className="d-flex">test</div>
+          <div className="d-flex">Privacy Statement</div>
           <div className="d-flex copyright">
             Copyright © 2021 Joe McGrath. All rights reserved.
           </div>
