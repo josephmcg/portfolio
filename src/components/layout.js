@@ -2,7 +2,6 @@ import React from "react"
 // import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import "../styles/style.scss"
-import "bootstrap"
 
 import DarkModeToggle from "./darkButton"
 
