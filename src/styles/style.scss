@@ -120,6 +120,10 @@ footer {
   margin-top: 2rem;
 }
 
+.dark-mode .feather {
+  filter: invert(90%) sepia(0%) saturate(7461%) hue-rotate(46deg)
+    brightness(115%) contrast(110%);
+}
 .copyright {
   margin-left: auto;
 }

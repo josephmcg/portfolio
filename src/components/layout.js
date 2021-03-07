@@ -5,7 +5,9 @@ import "../styles/style.scss"
 
 import DarkModeToggle from "./darkButton"
 
-import logo from "../../static/logo.png"
+import logo from "../../public/logo.png"
+import github from "../../public/github.svg"
+import linkedin from "../../public/linkedin.svg"
 
 export default function Layout({ children }) {
   return (
@@ -88,10 +90,15 @@ export default function Layout({ children }) {
         </div>
       </nav>
 
-      <main>{children}</main>
+      <main>
+        <article>{children}</article>
+      </main>
       <footer className="d-flex">
         <section className="container d-flex">
-          <div className="d-flex">Privacy Statement</div>
+          <div className="d-flex">
+            <img src={github} className="feather"></img>
+            <img src={linkedin} className="feather"></img>
+          </div>
           <div className="d-flex copyright">
             Copyright © 2021 Joe McGrath. All rights reserved.
           </div>

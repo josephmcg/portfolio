@@ -46,6 +46,7 @@ export default function Home() {
             <div className="col-lg-8">
               <h1>
                 <span id="typed"></span>
+                <span className="visually-hidden">Web Developer</span>
               </h1>
               <h2>with {years} years of commercial experience.</h2>
             </div>
