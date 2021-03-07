@@ -5,9 +5,9 @@ import "../styles/style.scss"
 
 import DarkModeToggle from "./darkButton"
 
-import logo from "../../public/logo.png"
-import github from "../../public/github.svg"
-import linkedin from "../../public/linkedin.svg"
+import logo from "../images/logo.png"
+import github from "../images/github.svg"
+import linkedin from "../images/linkedin.svg"
 
 export default function Layout({ children }) {
   return (
