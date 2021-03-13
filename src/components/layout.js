@@ -47,7 +47,7 @@ export default function Layout({ children }) {
             <div className="logo-name d-flex">Joe McGrath</div>
           </a>
           <button
-            className="navbar-toggler"
+            className="navbar-toggler d-none"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -87,6 +87,9 @@ export default function Layout({ children }) {
               </li>
             </ul>
           </div>
+          <div className="d-block d-sm-none">
+            <DarkModeToggle> </DarkModeToggle>
+          </div>
         </div>
       </nav>
 
@@ -95,8 +98,8 @@ export default function Layout({ children }) {
       </main>
 
       <footer className="d-flex">
-        <div className="container d-flex">
-          <div className="d-flex icon-links">
+        <div className="container d-md-flex text-center text-md-start">
+          <div className="icon-links my-2 m-md-0">
             <a
               className="icon-link"
               href="https://github.com/josephmcg"
@@ -114,8 +117,9 @@ export default function Layout({ children }) {
               <img src={linkedin} className="feather" alt="" />
             </a>
           </div>
-          <div className="d-flex align-items-center copyright">
-            Copyright © 2021 Joe McGrath. All rights reserved.
+          <div className="align-items-center copyright">
+            Copyright © 2021 Joe McGrath.
+            <br className="d-md-none" /> All rights reserved.
           </div>
         </div>
       </footer>

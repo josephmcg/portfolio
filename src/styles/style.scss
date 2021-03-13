@@ -40,7 +40,7 @@ nav {
 .logo-name {
   color: var(--text);
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   text-transform: uppercase;
   line-height: 1.2;
   margin: 0 0 0 0.7rem;
@@ -131,7 +131,7 @@ footer {
 }
 
 .icon-link:not(:first-of-type) {
-  margin-left: 1rem;
+  margin-left: 1.5rem;
 }
 
 .dark-mode .feather {
@@ -148,6 +148,7 @@ footer {
   }
   .logo-name {
     letter-spacing: 0.2rem;
+    font-size: 1.2rem;
   }
 }
 

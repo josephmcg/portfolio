@@ -65,21 +65,20 @@ export default function Home() {
 
       <div className="container">
         <section id="about">
-          <p>I like to rock the party</p>
-        </section>
-
-        <section id="skills">
-          <h2>Skills</h2>
+          <p>[Insert brief introduction here]</p>
+          <a href="/resume.pdf" target="_blank" className="btn btn-primary">
+            Resume
+          </a>
         </section>
 
         <section id="projects">
           <h2>Projects</h2>
           <div className="row">
-            <div className="col">
+            <div className="col-lg-4">
               <div className="card">
                 <img src={calc} alt="" className="img-fluid" />
                 <div className="card-body">
-                  <h3 className="text-center">National Grid EV Calculator</h3>
+                  <h3 className="text-center">National Grid Calculator</h3>
 
                   <div className="accordion-item mb-3">
                     <h2 className="accordion-header" id="accordionOne">
@@ -100,13 +99,26 @@ export default function Home() {
                       aria-labelledby="accordionOne"
                     >
                       <div className="accordion-body">
-                        Overall goal of the application
-                        <br />
-                        How it helps the customer's business
-                        <br />
-                        Some interesting technical features
-                        <br />
-                        What technologies the application uses
+                        <p>
+                          Web application that displays information regarding
+                          the fuel costs, emissions and environmental impact of
+                          conventional vehicles compared to their electric
+                          vehicle counterpart.
+                        </p>
+                        <p>
+                          I made a conscious effort to write vanilla JS, only
+                          depending on jQuery for the slick carousel. Initially
+                          developed as a standalone web app, then integrated
+                          into a larger Drupal site (which I also developed).
+                        </p>
+                        <p>
+                          Built with:
+                          <br />
+                          JavaScript, slick, d3
+                        </p>
+                        <p className="small text-muted">
+                          *I do not own this site. Developed for ICF.
+                        </p>
                       </div>
                     </div>
                   </div>
@@ -117,13 +129,14 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Live
+                      Live site
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col">
+
+            <div className="col-lg-4">
               <div className="card">
                 <img src={bge} alt="" className="img-fluid" />
                 <div className="card-body">
@@ -149,9 +162,15 @@ export default function Home() {
                     >
                       <div className="accordion-body">
                         <p>
-                          In fact, since relaunch, the site’s bounce rate
-                          decreased by 13%, while the average session duration
-                          increased by 17%
+                          This was my first project serving as lead developer.
+                          Complete overhaul of all styles and content.
+                        </p>
+                        <p>
+                          After launch, bounce rate decreased by 13%, while the
+                          average session duration increased by 17%.
+                        </p>
+                        <p className="small text-muted">
+                          *I do not own this site. Developed for ICF.
                         </p>
                       </div>
                     </div>
@@ -163,14 +182,52 @@ export default function Home() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      Live
+                      Live site
                     </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="col">
-              <div className="card">test</div>
+
+            <div className="col-lg-4">
+              <div className="card">
+                <div className="card-body">
+                  <h3 className="text-center">Placeholder</h3>
+
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header" id="accordionThree">
+                      <button
+                        className="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree"
+                        aria-expanded="false"
+                        aria-controls="collapseThree"
+                      >
+                        More information
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseThree"
+                      className="accordion-collapse collapse"
+                      aria-labelledby="accordionThree"
+                    >
+                      <div className="accordion-body">
+                        Possibly talk about this portfolio site.
+                      </div>
+                    </div>
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    <a
+                      className="btn btn-primary"
+                      href="#___gatsby"
+                      rel="noopener noreferrer"
+                    >
+                      Live site
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
