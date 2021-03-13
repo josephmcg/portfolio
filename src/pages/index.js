@@ -79,12 +79,12 @@ export default function Home() {
               <div className="card">
                 <img src={calc} alt="" className="img-fluid" />
                 <div className="card-body">
-                  <h3>National Grid EV Calculator</h3>
+                  <h3 className="text-center">National Grid EV Calculator</h3>
 
-                  <div class="accordion-item mb-3">
-                    <h2 class="accordion-header" id="accordionOne">
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header" id="accordionOne">
                       <button
-                        class="accordion-button collapsed"
+                        className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseOne"
@@ -96,10 +96,10 @@ export default function Home() {
                     </h2>
                     <div
                       id="collapseOne"
-                      class="accordion-collapse collapse"
+                      className="accordion-collapse collapse"
                       aria-labelledby="accordionOne"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         Overall goal of the application
                         <br />
                         How it helps the customer's business
@@ -110,14 +110,16 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a
-                    className="btn btn-primary"
-                    href="https://fleetadvisoryma.nationalgrid.com/instant-estimate"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live
-                  </a>
+                  <div className="d-flex justify-content-center">
+                    <a
+                      className="btn btn-primary"
+                      href="https://fleetadvisoryma.nationalgrid.com/instant-estimate"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -125,12 +127,12 @@ export default function Home() {
               <div className="card">
                 <img src={bge} alt="" className="img-fluid" />
                 <div className="card-body">
-                  <h3>BGE Website Redesign</h3>
+                  <h3 className="text-center">BGE Website Redesign</h3>
 
-                  <div class="accordion-item mb-3">
-                    <h2 class="accordion-header" id="accordionTwo">
+                  <div className="accordion-item mb-3">
+                    <h2 className="accordion-header" id="accordionTwo">
                       <button
-                        class="accordion-button collapsed"
+                        className="accordion-button collapsed"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#collapseTwo"
@@ -142,10 +144,10 @@ export default function Home() {
                     </h2>
                     <div
                       id="collapseTwo"
-                      class="accordion-collapse collapse"
+                      className="accordion-collapse collapse"
                       aria-labelledby="accordionTwo"
                     >
-                      <div class="accordion-body">
+                      <div className="accordion-body">
                         <p>
                           In fact, since relaunch, the site’s bounce rate
                           decreased by 13%, while the average session duration
@@ -154,14 +156,16 @@ export default function Home() {
                       </div>
                     </div>
                   </div>
-                  <a
-                    className="btn btn-primary"
-                    href="https://bgesmartenergy.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Live
-                  </a>
+                  <div className="d-flex justify-content-center">
+                    <a
+                      className="btn btn-primary"
+                      href="https://bgesmartenergy.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Live
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

@@ -3,7 +3,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 75px;
+  scroll-padding-top: 80px;
 }
 
 body.light-mode {
@@ -17,10 +17,10 @@ body.light-mode {
 
 body.dark-mode {
   --text: #fff;
-  --background: #0f1727;
+  --background: #0d1117;
   --glight: #15223c;
   --gdark: #101a31;
-  --background-secondary: #040a18;
+  --background-secondary: #161b22;
   --hamburger: url("/menu-dark.svg");
 }
 
