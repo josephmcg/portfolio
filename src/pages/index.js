@@ -3,6 +3,9 @@ import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import Typed from "typed.js"
 
+import calc from "../images/calc.png"
+import bge from "../images/bge.png"
+
 export default function Home() {
   let options = {
     strings: ["Web Developer", "Software Engineer", "Problem Solver"],
@@ -40,6 +43,7 @@ export default function Home() {
         <title>Joe McGrath | Web Developer</title>
         <link rel="canonical" href="https://josephmcg.netlify.app" />
       </Helmet>
+
       <div className="gradient">
         <div className="container">
           <div className="row">
@@ -58,47 +62,151 @@ export default function Home() {
           </div>
         </div>
       </div>
+
       <div className="container">
-        <p id="about">I like to rock the party</p>
+        <section id="about">
+          <p>I like to rock the party</p>
+        </section>
 
-        <h2 id="skills">Skills</h2>
+        <section id="skills">
+          <h2>Skills</h2>
+        </section>
 
-        <h2 id="projects">Projects</h2>
-        <p>Insert projects here</p>
-        <h2 id="contact">Contact Me</h2>
-        <form name="contact-joe" netlify="true">
-          <div className="form-floating mb-3">
-            <input
-              id="name"
-              className="form-control"
-              type="text"
-              placeholder="name"
-            />
-            <label htmlFor="name">Name</label>
+        <section id="projects">
+          <h2>Projects</h2>
+          <div className="row">
+            <div className="col">
+              <div className="card">
+                <img src={calc} alt="" className="img-fluid" />
+                <div className="card-body">
+                  <h3>National Grid EV Calculator</h3>
+
+                  <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="accordionOne">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne"
+                        aria-expanded="false"
+                        aria-controls="collapseOne"
+                      >
+                        More information
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseOne"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="accordionOne"
+                    >
+                      <div class="accordion-body">
+                        Overall goal of the application
+                        <br />
+                        How it helps the customer's business
+                        <br />
+                        Some interesting technical features
+                        <br />
+                        What technologies the application uses
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    className="btn btn-primary"
+                    href="https://fleetadvisoryma.nationalgrid.com/instant-estimate"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card">
+                <img src={bge} alt="" className="img-fluid" />
+                <div className="card-body">
+                  <h3>BGE Website Redesign</h3>
+
+                  <div class="accordion-item mb-3">
+                    <h2 class="accordion-header" id="accordionTwo">
+                      <button
+                        class="accordion-button collapsed"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="collapseTwo"
+                      >
+                        More information
+                      </button>
+                    </h2>
+                    <div
+                      id="collapseTwo"
+                      class="accordion-collapse collapse"
+                      aria-labelledby="accordionTwo"
+                    >
+                      <div class="accordion-body">
+                        <p>
+                          In fact, since relaunch, the site’s bounce rate
+                          decreased by 13%, while the average session duration
+                          increased by 17%
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <a
+                    className="btn btn-primary"
+                    href="https://bgesmartenergy.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Live
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div className="col">
+              <div className="card">test</div>
+            </div>
           </div>
+        </section>
 
-          <div className="form-floating mb-3">
-            <input
-              id="email"
-              className="form-control"
-              type="email"
-              placeholder="email"
-            />
-            <label htmlFor="email">Email</label>
-          </div>
+        <section id="contact">
+          <h2>Contact Me</h2>
+          <form name="contact-joe" netlify="true">
+            <div className="form-floating mb-3">
+              <input
+                id="name"
+                className="form-control"
+                type="text"
+                placeholder="name"
+              />
+              <label htmlFor="name">Name</label>
+            </div>
 
-          <div className="form-floating mb-3">
-            <textarea
-              id="comments"
-              className="form-control"
-              placeholder="comments"
-            ></textarea>
-            <label htmlFor="comments">Comments</label>
-          </div>
-          <button className="btn btn-primary form-control" type="submit">
-            Send Message
-          </button>
-        </form>
+            <div className="form-floating mb-3">
+              <input
+                id="email"
+                className="form-control"
+                type="email"
+                placeholder="email"
+              />
+              <label htmlFor="email">Email</label>
+            </div>
+
+            <div className="form-floating mb-3">
+              <textarea
+                id="comments"
+                className="form-control"
+                placeholder="comments"
+              ></textarea>
+              <label htmlFor="comments">Comments</label>
+            </div>
+            <button className="btn btn-primary form-control" type="submit">
+              Send Message
+            </button>
+          </form>
+        </section>
       </div>
     </Layout>
   )

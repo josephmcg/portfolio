@@ -93,16 +93,29 @@ export default function Layout({ children }) {
       <main>
         <article>{children}</article>
       </main>
+
       <footer className="d-flex">
-        <section className="container d-flex">
-          <div className="d-flex">
-            <img src={github} className="feather"></img>
-            <img src={linkedin} className="feather"></img>
+        <div className="container d-flex">
+          <div className="d-flex icon-links">
+            <a
+              className="icon-link"
+              href="https://github.com/josephmcg"
+              target="_blank"
+            >
+              <img src={github} className="feather" alt="" />
+            </a>
+            <a
+              className="icon-link"
+              href="https://www.linkedin.com/in/josephmcg/"
+              target="_blank"
+            >
+              <img src={linkedin} className="feather" alt="" />
+            </a>
           </div>
-          <div className="d-flex copyright">
+          <div className="d-flex align-items-center copyright">
             Copyright © 2021 Joe McGrath. All rights reserved.
           </div>
-        </section>
+        </div>
       </footer>
     </>
   )
