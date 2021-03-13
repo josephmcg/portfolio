@@ -101,6 +101,7 @@ export default function Layout({ children }) {
               className="icon-link"
               href="https://github.com/josephmcg"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img src={github} className="feather" alt="" />
             </a>
@@ -108,6 +109,7 @@ export default function Layout({ children }) {
               className="icon-link"
               href="https://www.linkedin.com/in/josephmcg/"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img src={linkedin} className="feather" alt="" />
             </a>
