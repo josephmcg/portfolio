@@ -234,7 +234,7 @@ export default function Home() {
 
         <section id="contact">
           <h2>Contact Me</h2>
-          <form name="contact-joe" netlify="true">
+          <form name="contact-joe" netlify="true" netlify-honeypot="url">
             <div className="form-floating mb-3">
               <input
                 id="name"
@@ -262,6 +262,11 @@ export default function Home() {
                 placeholder="comments"
               ></textarea>
               <label htmlFor="comments">Comments</label>
+            </div>
+            <div class="d-none">
+              <label>
+                Don’t fill this out if you're human: <input name="url" />
+              </label>
             </div>
             <button className="btn btn-primary form-control" type="submit">
               Send Message
