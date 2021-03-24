@@ -5,6 +5,7 @@ import Typed from "typed.js"
 
 import calc from "../images/calc.png"
 import bge from "../images/bge.png"
+import headshot from "../images/headshot.jpg"
 
 export default function Home() {
   let options = {
@@ -46,36 +47,59 @@ export default function Home() {
 
       <div className="gradient">
         <div className="container">
-          <div className="row">
-            <div className="col-lg-8">
-              <h1>
-                <span id="typed"></span>
-                <span className="visually-hidden">Web Developer</span>
-              </h1>
-              <h2>with {years} years of commercial experience.</h2>
-            </div>
-            <div className="col-lg-4">
-              <div className="text-center">
-                <img className="rounded-circle img-fluid" src="" alt="" />
-              </div>
-            </div>
-          </div>
+          <h1>
+            <span id="typed"></span>
+            <span className="visually-hidden">Web Developer</span>
+          </h1>
+          <h2>with {years} years of commercial experience.</h2>
         </div>
       </div>
 
       <div className="container">
         <section id="about">
-          <p>[Insert brief introduction here]</p>
-          <a href="/resume.pdf" target="_blank" className="btn btn-primary">
-            Resume
-          </a>
+          <h2>About Me</h2>
+          <div className="row">
+            <div className="col-lg-8">
+              <p>
+                I'm a Tokyo based web developer who specializes in creating
+                innovative, exceptional digital experiences. I prioritize the
+                business needs of the client while maintaining a simple,
+                scalable architecture and an intuitive user experience.
+              </p>
+              <p>
+                My experience includes front-end/back-end web, database/server
+                management, and a bit of ecommerce. I have experience building a
+                variety of projects, from SPA's to larger CMS based sites.
+                Lately, I've been focusing on React and node.
+              </p>
+              <p>
+                I moved to Japan to better understand my fiancée's langauge and
+                culture. I'm currently enrolled in an intensive Japanese
+                Language School until June of this year (6/21).
+              </p>
+              <p>
+                My interests outside of development are music, vintage clothing,
+                investing, and travel.
+              </p>
+              <a href="/resume.pdf" target="_blank" className="btn btn-primary">
+                Resume
+              </a>
+            </div>
+            <div className="col-lg-3 offset-lg-1">
+              <img
+                className="headshot rounded-circle img-fluid d-block mx-auto"
+                src={headshot}
+                alt=""
+              />
+            </div>
+          </div>
         </section>
 
         <section id="projects">
           <h2>Projects</h2>
           <div className="row">
             <div className="col-lg-4">
-              <div className="card">
+              <div className="card mb-3 mb-lg-0">
                 <img src={calc} alt="" className="img-fluid" />
                 <div className="card-body">
                   <h3 className="text-center">National Grid Calculator</h3>
@@ -137,7 +161,7 @@ export default function Home() {
             </div>
 
             <div className="col-lg-4">
-              <div className="card">
+              <div className="card mb-3 mb-lg-0">
                 <img src={bge} alt="" className="img-fluid" />
                 <div className="card-body">
                   <h3 className="text-center">BGE Website Redesign</h3>
@@ -233,7 +257,7 @@ export default function Home() {
         </section>
 
         <section id="contact">
-          <h2>Contact Me</h2>
+          <h2>Contact</h2>
           <form name="contact-joe" netlify="true" netlify-honeypot="url">
             <div className="form-floating mb-3">
               <input

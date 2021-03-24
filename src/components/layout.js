@@ -63,11 +63,6 @@ export default function Layout({ children }) {
           >
             <ul className="navbar-nav mb-2 mb-sm-0">
               <li>
-                <a className="nav-link" href="#___gatsby">
-                  Home
-                </a>
-              </li>
-              <li>
                 <a className="nav-link" href="#about">
                   About
                 </a>
@@ -80,6 +75,11 @@ export default function Layout({ children }) {
               <li>
                 <a className="nav-link" href="#contact">
                   Contact
+                </a>
+              </li>
+              <li>
+                <a className="nav-link" href="resume.pdf" target="_blank">
+                  Resume
                 </a>
               </li>
               <li>

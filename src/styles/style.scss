@@ -119,7 +119,11 @@ label {
     linear-gradient(147deg, var(--gdark), var(--gdark) 25%, var(--glight))
     no-repeat;
   color: #fff;
-  padding-top: 1rem;
+  padding: 1rem 0;
+}
+
+.headshot {
+  max-height: 240px;
 }
 
 footer {
@@ -153,7 +157,7 @@ footer {
 
 @media only screen and (min-width: 575px) {
   html {
-    scroll-padding-top: 75px;
+    scroll-padding-top: 80px;
   }
   .navbar {
     position: sticky;
@@ -163,6 +167,9 @@ footer {
 }
 
 @media only screen and (min-width: 600px) {
+  .headshot {
+    max-height: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {
