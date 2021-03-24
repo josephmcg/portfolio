@@ -141,7 +141,8 @@ export default function Home() {
                           JavaScript, slick, d3
                         </p>
                         <p className="small text-muted">
-                          *I do not own this site. Developed for ICF.
+                          *I do not own this site. Developed for former
+                          employer.
                         </p>
                       </div>
                     </div>
@@ -194,7 +195,8 @@ export default function Home() {
                           average session duration increased by 17%.
                         </p>
                         <p className="small text-muted">
-                          *I do not own this site. Developed for ICF.
+                          *I do not own this site. Developed for former
+                          employer.
                         </p>
                       </div>
                     </div>
