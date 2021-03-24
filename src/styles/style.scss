@@ -3,7 +3,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
 }
 
 body.light-mode {
@@ -149,6 +148,17 @@ footer {
   .logo-name {
     letter-spacing: 0.2rem;
     font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 575px) {
+  html {
+    scroll-padding-top: 75px;
+  }
+  .navbar {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
   }
 }
 

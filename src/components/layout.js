@@ -37,7 +37,7 @@ export default function Layout({ children }) {
         <meta name="theme-color" content="#ffffff" />
       </Helmet>
 
-      <nav className="navbar navbar-expand-sm sticky-top">
+      <nav className="navbar navbar-expand-sm">
         <div className="container-fluid">
           <a
             className="navbar-brand d-flex align-items-center"

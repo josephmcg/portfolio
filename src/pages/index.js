@@ -263,7 +263,7 @@ export default function Home() {
               ></textarea>
               <label htmlFor="comments">Comments</label>
             </div>
-            <div class="d-none">
+            <div className="d-none">
               <label>
                 Don’t fill this out if you're human: <input name="url" />
               </label>
