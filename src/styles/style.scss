@@ -94,6 +94,10 @@ h3 {
   font-size: 1.5rem;
 }
 
+.accordion-button.collapsed {
+  border-bottom-width: 1px;
+}
+
 .card {
   color: #000;
 }
