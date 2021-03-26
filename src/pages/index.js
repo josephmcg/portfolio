@@ -79,9 +79,9 @@ export default function Home() {
               </p>
               <p>
                 My interests outside of development are music, vintage clothing,
-                investing, and travel.
+                investing, and tasty food.
               </p>
-              <a href="/resume.pdf" target="_blank" className="btn btn-primary">
+              <a href="/resume.pdf" target="_blank" className="btn">
                 Resume
               </a>
             </div>
@@ -130,8 +130,8 @@ export default function Home() {
                           vehicle counterpart.
                         </p>
                         <p>
-                          I made a conscious effort to write vanilla JS, only
-                          depending on jQuery for the slick carousel. Initially
+                          I made a conscious effort to write vanilla JS to make
+                          a possible React transition easier. Initially
                           developed as a standalone web app, then integrated
                           into a larger Drupal site (which I also developed).
                         </p>
@@ -140,7 +140,7 @@ export default function Home() {
                           <br />
                           JavaScript, slick, d3
                         </p>
-                        <p className="small text-muted">
+                        <p className="small muted">
                           *I do not own this site. Developed for former
                           employer.
                         </p>
@@ -149,7 +149,7 @@ export default function Home() {
                   </div>
                   <div className="d-flex justify-content-center">
                     <a
-                      className="btn btn-primary"
+                      className="btn"
                       href="https://fleetadvisoryma.nationalgrid.com/instant-estimate"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -194,7 +194,7 @@ export default function Home() {
                           After launch, bounce rate decreased by 13%, while the
                           average session duration increased by 17%.
                         </p>
-                        <p className="small text-muted">
+                        <p className="small muted">
                           *I do not own this site. Developed for former
                           employer.
                         </p>
@@ -203,7 +203,7 @@ export default function Home() {
                   </div>
                   <div className="d-flex justify-content-center">
                     <a
-                      className="btn btn-primary"
+                      className="btn"
                       href="https://bgesmartenergy.com"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -245,7 +245,7 @@ export default function Home() {
                   </div>
                   <div className="d-flex justify-content-center">
                     <a
-                      className="btn btn-primary"
+                      className="btn"
                       href="#___gatsby"
                       rel="noopener noreferrer"
                     >
@@ -294,7 +294,7 @@ export default function Home() {
                 Don’t fill this out if you're human: <input name="url" />
               </label>
             </div>
-            <button className="btn btn-primary form-control" type="submit">
+            <button className="btn form-control" type="submit">
               Send Message
             </button>
           </form>

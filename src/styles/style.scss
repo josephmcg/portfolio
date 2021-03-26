@@ -1,6 +1,10 @@
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../../node_modules/@fontsource/roboto/index.css";
 
+/* =========================
+   General
+   ========================= */
+
 html {
   scroll-behavior: smooth;
 }
@@ -8,18 +12,25 @@ html {
 body.light-mode {
   --text: #000;
   --background: #fff;
+  --background-secondary: #f5f5f5;
   --glight: #40d1e5;
   --gdark: #0e6677;
-  --background-secondary: #f5f5f5;
+  --btndefault: #0790e1;
+  --btnhover: #fff;
+  --accent: rgba(0, 0, 0, 0.125);
+  --muted: #6c757d;
   --hamburger: url("/menu.svg");
 }
 
 body.dark-mode {
   --text: #fff;
-  --background: #0d1117;
-  --glight: #15223c;
-  --gdark: #101a31;
-  --background-secondary: #161b22;
+  --background: #0a192f;
+  --background-secondary: #020c1b;
+  --background-tertiary: #112240;
+  --btndefault: transparent;
+  --btnhover: rgba(168, 178, 209, 0.125);
+  --accent: #a8b2d1;
+  --muted: #8892b0;
   --hamburger: url("/menu-dark.svg");
 }
 
@@ -28,6 +39,30 @@ body {
   color: var(--text);
   background-color: var(--background);
 }
+
+section {
+  margin-top: 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+#comments {
+  min-height: 7em;
+}
+
+.muted {
+  color: var(--muted);
+}
+
+/* =========================
+   Navbar
+   ========================= */
 
 nav {
   background-color: var(--background-secondary);
@@ -82,31 +117,49 @@ nav {
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-section {
-  margin-top: 1rem;
+/* =========================
+   Cards / Buttons / Accordions
+   ========================= */
+.dark-mode .card,
+.dark-mode .form-control {
+  color: var(--text);
+  background-color: var(--background-tertiary);
 }
 
-h1 {
-  font-size: 2rem;
+.btn {
+  color: #fff;
+  background-color: var(--btndefault);
+}
+.btn:hover,
+.btn:focus {
+  color: var(--btndefault);
+  background-color: var(--btnhover);
+  border-color: var(--btndefault);
 }
 
-h3 {
-  font-size: 1.5rem;
+.dark-mode .btn {
+  color: #fff;
+  border-color: var(--accent);
 }
 
 .accordion-button.collapsed {
+  color: var(--text);
   border-bottom-width: 1px;
+  border-color: var(--accent);
+}
+.dark-mode .accordion-button::after {
+  filter: invert(84%) sepia(4%) saturate(2222%) hue-rotate(191deg)
+    brightness(85%) contrast(90%);
+}
+.dark-mode .accordion-button:not(.collapsed) {
+  background-color: var(--accent);
 }
 
-.card {
-  color: #000;
+.accordion-collapse {
+  border-width: 0 1px 1px;
 }
-
-label {
-  color: #000;
-}
-#comments {
-  min-height: 7em;
+.dark-mode .accordion-collapse {
+  border-color: var(--accent);
 }
 
 .parallax {
@@ -124,6 +177,9 @@ label {
     no-repeat;
   color: #fff;
   padding: 1rem 0;
+}
+.dark-mode .gradient {
+  background: var(--background-tertiary);
 }
 
 .headshot {
