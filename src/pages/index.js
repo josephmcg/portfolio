@@ -263,7 +263,7 @@ export default function Home() {
           <form
             name="contact-joe"
             method="POST"
-            netlify="true"
+            data-netlify="true"
             netlify-honeypot="url"
           >
             <div className="form-floating mb-3">

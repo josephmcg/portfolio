@@ -54,3 +54,4 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 - add third website
 - adjust copy
+- change darkmode input boxes to offwhite to account for chrome autofill behavior
