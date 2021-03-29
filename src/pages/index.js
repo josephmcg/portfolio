@@ -10,9 +10,9 @@ import headshot from "../images/headshot.jpg"
 export default function Home() {
   let options = {
     strings: ["Web Developer", "Software Engineer", "Problem Solver"],
-    typeSpeed: 40,
+    typeSpeed: 60,
     startDelay: 1200,
-    backSpeed: 40,
+    backSpeed: 60,
     backDelay: 2000,
     loop: true,
     loopCount: false,

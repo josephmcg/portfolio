@@ -53,7 +53,4 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 ## 💫 To do:
 
 - add third website
-- change dark mode colors (card specifically)
 - adjust copy
-- hover effect for footer link icons. maybe switch to embedded svg rather than separate files
-- slow down typed.js config

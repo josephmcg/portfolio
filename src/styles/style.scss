@@ -197,10 +197,20 @@ footer {
   margin-left: 1.5rem;
 }
 
+a:hover .feather,
+a:focus .feather {
+  filter: opacity(0.6);
+}
 .dark-mode .feather {
   filter: invert(90%) sepia(0%) saturate(7461%) hue-rotate(46deg)
     brightness(115%) contrast(110%);
 }
+.dark-mode a:hover .feather,
+.dark-mode a:focus .feather {
+  filter: invert(90%) sepia(0%) saturate(7461%) hue-rotate(46deg)
+    brightness(115%) contrast(110%) opacity(0.6);
+}
+
 .copyright {
   margin-left: auto;
 }
