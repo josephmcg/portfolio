@@ -260,15 +260,23 @@ export default function Home() {
 
         <section id="contact">
           <h2>Contact</h2>
-          <form name="contact-joe" netlify="true" netlify-honeypot="url">
+          <form
+            name="contact-joe"
+            method="POST"
+            netlify="true"
+            netlify-honeypot="url"
+          >
             <div className="form-floating mb-3">
               <input
                 id="name"
                 className="form-control"
                 type="text"
                 placeholder="name"
+                required
               />
-              <label htmlFor="name">Name</label>
+              <label htmlFor="name" className="required">
+                Name
+              </label>
             </div>
 
             <div className="form-floating mb-3">
@@ -277,8 +285,11 @@ export default function Home() {
                 className="form-control"
                 type="email"
                 placeholder="email"
+                required
               />
-              <label htmlFor="email">Email</label>
+              <label htmlFor="email" className="required">
+                Email
+              </label>
             </div>
 
             <div className="form-floating mb-3">
