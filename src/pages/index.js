@@ -76,7 +76,7 @@ export default function Home() {
               <p>
                 I moved to Japan to better understand my fiancée's langauge and
                 culture. I'm currently enrolled in an intensive Japanese
-                Language School until June of this year (6/21).
+                language school until June of this year (6/21).
               </p>
               <p>
                 My interests outside of development are music, vintage clothing,
