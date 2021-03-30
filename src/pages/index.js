@@ -260,8 +260,13 @@ export default function Home() {
 
         <section id="contact">
           <h2>Contact</h2>
-          <form name="contact" method="post" netlify netlify-honeypot="url">
-            <input type="hidden" name="form-name" value="contact" />
+          <form
+            name="contact"
+            method="post"
+            data-netlify="true"
+            data-netlify-honeypot="bot-field"
+          >
+            <input type="hidden" name="bot-field" />
             <div className="form-floating mb-3">
               <input
                 id="name"
@@ -274,7 +279,6 @@ export default function Home() {
                 Name
               </label>
             </div>
-
             <div className="form-floating mb-3">
               <input
                 id="email"
@@ -287,7 +291,6 @@ export default function Home() {
                 Email
               </label>
             </div>
-
             <div className="form-floating mb-3">
               <textarea
                 id="comments"
@@ -295,11 +298,6 @@ export default function Home() {
                 placeholder="comments"
               ></textarea>
               <label htmlFor="comments">Comments</label>
-            </div>
-            <div className="d-none">
-              <label>
-                Don’t fill this out if you're human: <input name="url" />
-              </label>
             </div>
             <button className="btn form-control" type="submit">
               Send Message
