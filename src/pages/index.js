@@ -267,6 +267,7 @@ export default function Home() {
             data-netlify-honeypot="bot-field"
           >
             <input type="hidden" name="bot-field" />
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form-floating mb-3">
               <input
                 id="name"
