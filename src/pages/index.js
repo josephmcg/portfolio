@@ -260,8 +260,8 @@ export default function Home() {
 
         <section id="contact">
           <h2>Contact</h2>
-          <form name="contact-joe" method="post" netlify netlify-honeypot="url">
-            <input type="hidden" name="form-name" value="contact-joe" />
+          <form name="contact" method="post" netlify netlify-honeypot="url">
+            <input type="hidden" name="form-name" value="contact" />
             <div className="form-floating mb-3">
               <input
                 id="name"
