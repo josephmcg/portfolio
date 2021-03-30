@@ -52,12 +52,33 @@ h3 {
   font-size: 1.5rem;
 }
 
-#comments {
-  min-height: 7em;
-}
-
 .muted {
   color: var(--muted);
+}
+
+.gradient {
+  background: var(--gdark)
+    linear-gradient(147deg, var(--gdark), var(--gdark) 25%, var(--glight))
+    no-repeat;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.dark-mode .gradient {
+  background: var(--background-tertiary);
+}
+
+.headshot {
+  max-height: 240px;
+}
+
+.parallax {
+  // background-image: url("img_parallax.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* =========================
@@ -118,17 +139,14 @@ nav {
 }
 
 /* =========================
-   Cards / Buttons / Accordions
+  Buttons / Accordions / Cards
    ========================= */
-.dark-mode .card {
-  color: var(--text);
-  background-color: var(--background-tertiary);
-}
 
 .btn {
   color: #fff;
   background-color: var(--btndefault);
 }
+
 .btn:hover,
 .btn:focus {
   color: var(--btndefault);
@@ -146,10 +164,12 @@ nav {
   border-bottom-width: 1px;
   border-color: var(--accent);
 }
+
 .dark-mode .accordion-button::after {
   filter: invert(84%) sepia(4%) saturate(2222%) hue-rotate(191deg)
     brightness(85%) contrast(90%);
 }
+
 .dark-mode .accordion-button:not(.collapsed) {
   background-color: var(--accent);
 }
@@ -157,37 +177,23 @@ nav {
 .accordion-collapse {
   border-width: 0 1px 1px;
 }
+
 .dark-mode .accordion-collapse {
   border-color: var(--accent);
 }
 
-.parallax {
-  // background-image: url("img_parallax.jpg");
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.gradient {
-  background: var(--gdark)
-    linear-gradient(147deg, var(--gdark), var(--gdark) 25%, var(--glight))
-    no-repeat;
-  color: #fff;
-  padding: 1rem 0;
-}
-.dark-mode .gradient {
-  background: var(--background-tertiary);
-}
-
-.headshot {
-  max-height: 240px;
+.dark-mode .card {
+  background-color: var(--background-tertiary);
 }
 
 /* =========================
    Form
    ========================= */
+
+#comments {
+  min-height: 7em;
+}
+
 .dark-mode label {
   color: #000;
 }
@@ -202,6 +208,10 @@ nav {
   height: 6px;
   width: 6px;
 }
+
+/* =========================
+   Footer
+   ========================= */
 
 footer {
   background: var(--background-secondary);
@@ -218,10 +228,12 @@ a:hover .feather,
 a:focus .feather {
   filter: opacity(0.6);
 }
+
 .dark-mode .feather {
   filter: invert(90%) sepia(0%) saturate(7461%) hue-rotate(46deg)
     brightness(115%) contrast(110%);
 }
+
 .dark-mode a:hover .feather,
 .dark-mode a:focus .feather {
   filter: invert(90%) sepia(0%) saturate(7461%) hue-rotate(46deg)
@@ -231,6 +243,10 @@ a:focus .feather {
 .copyright {
   margin-left: auto;
 }
+
+/* =========================
+   Responsive
+   ========================= */
 
 @media only screen and (min-width: 375px) {
   h1 {

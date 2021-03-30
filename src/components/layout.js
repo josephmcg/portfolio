@@ -1,5 +1,5 @@
 import React from "react"
-// import { Link } from "gatsby"
+import { Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import "../styles/style.scss"
 
@@ -39,13 +39,10 @@ export default function Layout({ children }) {
 
       <nav className="navbar navbar-expand-sm">
         <div className="container-fluid">
-          <a
-            className="navbar-brand d-flex align-items-center"
-            href="#___gatsby"
-          >
+          <Link className="navbar-brand d-flex align-items-center" to="/">
             <img src={logo} className="d-flex" alt="" />
             <div className="logo-name d-flex">Joe McGrath</div>
-          </a>
+          </Link>
           <button
             className="navbar-toggler d-none"
             type="button"
@@ -110,7 +107,7 @@ export default function Layout({ children }) {
             </a>
             <a
               className="icon-link"
-              href="https://www.linkedin.com/in/josephmcg/"
+              href="https://www.linkedin.com/in/josephmcg"
               target="_blank"
               rel="noopener noreferrer"
             >

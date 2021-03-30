@@ -3,9 +3,10 @@ import Layout from "../components/layout"
 import { Helmet } from "react-helmet"
 import Typed from "typed.js"
 
+import headshot from "../images/headshot.jpg"
 import calc from "../images/calc.png"
 import bge from "../images/bge.png"
-import headshot from "../images/headshot.jpg"
+import kana from "../images/kana.png"
 
 export default function Home() {
   let options = {
@@ -79,7 +80,7 @@ export default function Home() {
               </p>
               <p>
                 My interests outside of development are music, vintage clothing,
-                investing, and tasty food.
+                and tasty food.
               </p>
               <a href="/resume.pdf" target="_blank" className="btn">
                 Resume
@@ -124,13 +125,12 @@ export default function Home() {
                     >
                       <div className="accordion-body">
                         <p>
-                          Web application that displays information regarding
-                          the fuel costs, emissions and environmental impact of
-                          conventional vehicles compared to their electric
-                          vehicle counterpart.
+                          Web application that displays pertinent information
+                          regarding conventional vehicles compared to their
+                          electric vehicle counterpart.
                         </p>
                         <p>
-                          I made a conscious effort to write vanilla JS to make
+                          I made a conscious effort to write vanilla js to make
                           a possible React transition easier. Initially
                           developed as a standalone web app, then integrated
                           into a larger Drupal site (which I also developed).
@@ -138,7 +138,7 @@ export default function Home() {
                         <p>
                           Built with:
                           <br />
-                          JavaScript, slick, d3
+                          JavaScript, slick, d3, Bootstrap 4
                         </p>
                         <p className="small muted">
                           *I do not own this site. Developed for former
@@ -194,6 +194,11 @@ export default function Home() {
                           After launch, bounce rate decreased by 13%, while the
                           average session duration increased by 17%.
                         </p>
+                        <p>
+                          Built with:
+                          <br />
+                          Drupal, Bootstrap 3
+                        </p>
                         <p className="small muted">
                           *I do not own this site. Developed for former
                           employer.
@@ -217,8 +222,9 @@ export default function Home() {
 
             <div className="col-lg-4">
               <div className="card">
+                <img src={kana} alt="" className="img-fluid" />
                 <div className="card-body">
-                  <h3 className="text-center">Placeholder</h3>
+                  <h3 className="text-center">Kana Flashcards</h3>
 
                   <div className="accordion-item mb-3">
                     <h2 className="accordion-header" id="accordionThree">
@@ -239,14 +245,24 @@ export default function Home() {
                       aria-labelledby="accordionThree"
                     >
                       <div className="accordion-body">
-                        Possibly talk about this portfolio site.
+                        <p>
+                          I made this to refresh my basic Japanese skills before
+                          starting my intensive language course. Tap/click a
+                          card to flip and see the romaji.
+                        </p>
+                        <p>
+                          Built with:
+                          <br />
+                          React, CSS Grid
+                        </p>
                       </div>
                     </div>
                   </div>
                   <div className="d-flex justify-content-center">
                     <a
                       className="btn"
-                      href="#___gatsby"
+                      href="https://kana-flashcards.netlify.app"
+                      target="_blank"
                       rel="noopener noreferrer"
                     >
                       Live site

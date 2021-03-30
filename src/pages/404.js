@@ -6,8 +6,8 @@ export default function About() {
   return (
     <Layout>
       <div className="container">
-        <p>The future belongs to the curious.</p>
-        <p>Good luck on your journey.</p>
+        <p className="mt-3">You're curious, I like that.</p>
+
         <Link to={`/`}>Check the homepage</Link>
       </div>
     </Layout>

@@ -1,7 +1,8 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
   <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
+    <!-- <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" /> -->
+    <img alt="Portfolio Icon" src="https://josephmcg.netlify.app/apple-touch-icon.png" width="60" />
   </a>
 </p>
 <h1 align="center">
@@ -50,8 +51,9 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
+Feel free to fork and or find inspiration.
+
 ## 💫 To do:
 
-- add third website
 - adjust copy
-- change darkmode input boxes to offwhite to account for chrome autofill behavior
+- SEO component rather than helmet on layout
