@@ -274,6 +274,7 @@ export default function Home() {
                 className="form-control"
                 type="text"
                 placeholder="name"
+                name="name"
                 required
               />
               <label htmlFor="name" className="required">
@@ -286,6 +287,7 @@ export default function Home() {
                 className="form-control"
                 type="email"
                 placeholder="email"
+                name="email"
                 required
               />
               <label htmlFor="email" className="required">
@@ -297,6 +299,7 @@ export default function Home() {
                 id="comments"
                 className="form-control"
                 placeholder="comments"
+                name="comments"
               ></textarea>
               <label htmlFor="comments">Comments</label>
             </div>
