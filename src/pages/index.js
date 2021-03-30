@@ -43,7 +43,7 @@ export default function Home() {
       <Helmet>
         <meta charSet="utf-8" />
         <title>Joe McGrath | Web Developer</title>
-        <link rel="canonical" href="https://josephmcg.netlify.app" />
+        <link rel="canonical" href="https://josephmcg.com" />
       </Helmet>
 
       <div className="gradient">
