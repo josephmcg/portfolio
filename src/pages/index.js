@@ -62,25 +62,25 @@ export default function Home() {
           <div className="row">
             <div className="col-lg-8">
               <p>
-                I'm a Tokyo based web developer who specializes in creating
+                I'm a Tokyo-based web developer who specializes in creating
                 innovative, exceptional digital experiences. I prioritize the
                 business needs of the client while maintaining a simple,
                 scalable architecture and an intuitive user experience.
               </p>
               <p>
                 My experience includes front-end/back-end web, database/server
-                management, and a bit of ecommerce. I have experience building a
-                variety of projects, from SPA's to larger CMS based sites.
-                Lately, I've been focusing on React and node.
+                management, and ecommerce. I have experience building a variety
+                of projects, from SPA's to larger CMS sites. I've recently been
+                focusing on React and node.
               </p>
               <p>
-                I moved to Japan to better understand my fiancée's langauge and
+                I moved to Japan to better understand my fiancée's language and
                 culture. I'm currently enrolled in an intensive Japanese
                 language school until June of this year (6/21).
               </p>
               <p>
-                My interests outside of development are music, vintage clothing,
-                and tasty food.
+                My outside interests are music, vintage clothing, and tasty
+                food.
               </p>
               <a href="/resume.pdf" target="_blank" className="btn">
                 Resume
@@ -132,7 +132,7 @@ export default function Home() {
                         <p>
                           I made a conscious effort to write vanilla js to make
                           a possible React transition easier. Initially
-                          developed as a standalone web app, then integrated
+                          developed as a stand-alone web app, then integrated
                           into a larger Drupal site (which I also developed).
                         </p>
                         <p>
@@ -141,8 +141,7 @@ export default function Home() {
                           JavaScript, slick, d3, Bootstrap 4
                         </p>
                         <p className="small muted">
-                          *I do not own this site. Developed for former
-                          employer.
+                          I do not own this site. Developed for former employer.
                         </p>
                       </div>
                     </div>
@@ -200,8 +199,7 @@ export default function Home() {
                           Drupal, Bootstrap 3
                         </p>
                         <p className="small muted">
-                          *I do not own this site. Developed for former
-                          employer.
+                          I do not own this site. Developed for former employer.
                         </p>
                       </div>
                     </div>
@@ -246,7 +244,7 @@ export default function Home() {
                     >
                       <div className="accordion-body">
                         <p>
-                          I made this to refresh my basic Japanese skills before
+                          I made a web app to refresh my basic Japanese before
                           starting my intensive language course. Tap/click a
                           card to flip and see the romaji.
                         </p>
