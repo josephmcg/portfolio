@@ -1,6 +1,6 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <p align="center">
-  <a href="https://www.gatsbyjs.com">
+  <a href="https://josephmcg.com">
     <!-- <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" /> -->
     <img alt="Portfolio Icon" src="https://josephmcg.netlify.app/apple-touch-icon.png" width="60" />
   </a>
