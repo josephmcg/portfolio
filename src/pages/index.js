@@ -70,8 +70,8 @@ export default function Home() {
               <p>
                 My experience includes front-end/back-end web, database/server
                 management, and ecommerce. I have experience building a variety
-                of projects, from SPA's to larger CMS sites. I've recently been
-                focusing on React and node.
+                of projects, from SPA's to larger CMS-based sites. I've recently
+                been focusing on React and node.
               </p>
               <p>
                 I moved to Japan to better understand my wife's language and
