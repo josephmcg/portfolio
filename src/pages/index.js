@@ -74,7 +74,7 @@ export default function Home() {
                 focusing on React and node.
               </p>
               <p>
-                I moved to Japan to better understand my fiancée's language and
+                I moved to Japan to better understand my wife's language and
                 culture. I'm currently enrolled in an intensive Japanese
                 language school until June of this year (6/21).
               </p>
