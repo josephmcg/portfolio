@@ -251,7 +251,7 @@ export default function Home() {
                         <p>
                           Built with:
                           <br />
-                          React, CSS Grid
+                          React
                         </p>
                       </div>
                     </div>
