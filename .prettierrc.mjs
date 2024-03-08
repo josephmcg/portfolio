@@ -1,3 +1,3 @@
-import { tailwindConfig } from "@josephmcg/prettier-config";
+import { tailwindConfig } from '@josephmcg/prettier-config'
 
-export default tailwindConfig;
+export default tailwindConfig

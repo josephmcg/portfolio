@@ -1,5 +1,6 @@
 import './globals.css'
 
+import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -17,8 +18,13 @@ export default function RootLayout({
 }>): React.JSX.Element {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <main>{children}</main>
+      <body
+        className={clsx(
+          inter.className,
+          'flex min-h-[90vh] items-center justify-center p-[24px]',
+        )}
+      >
+        {children}
       </body>
     </html>
   )
