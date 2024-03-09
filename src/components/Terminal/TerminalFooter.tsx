@@ -1,19 +1,52 @@
+import clsx from 'clsx'
+import React from 'react'
+
+import { TerminalBranch } from '~/components/Terminal/TerminalBranch'
+
+type Item = {
+  className?: string
+  element: React.ReactNode
+}
+
+const items: Item[] = [
+  {
+    element: (
+      <>
+        <TerminalBranch /> main
+      </>
+    ),
+  },
+  {
+    element: './joe.ts',
+  },
+  {
+    // hilarious false positive
+    // eslint-disable-next-line unicorn/text-encoding-identifier-case
+    element: 'UTF-8',
+    className: clsx('ml-auto'),
+  },
+  {
+    element: 'LF',
+  },
+  {
+    element: '{}',
+  },
+  {
+    element: 'TypeScript',
+  },
+]
+
 export const TerminalFooter: React.FC = () => {
   return (
-    <footer className="flex font-mono text-sm text-gray-400/90 shadow">
-      <div className="bg-gray-600/20 px-[1ch] py-1 font-semibold uppercase">
-        normal
-      </div>
-      <div className="bg-gray-600/30 px-[1ch] py-1 font-semibold"> main</div>
-      <div className="flex flex-1 space-x-[2ch] bg-gray-600/40 px-[1ch] py-1 font-semibold">
-        ./joe.ts
-      </div>
-      <div className="hidden bg-gray-600/30 px-[1ch] py-1 font-semibold uppercase md:block">
-        utf-8
-      </div>
-      <div className="hidden space-x-1 bg-gray-600/20 px-[1ch] py-1 font-semibold uppercase md:block">
-        LF
-      </div>
+    <footer className="bg-secondary text-light flex font-mono text-sm shadow">
+      {items.map((item, index) => (
+        <div
+          key={index}
+          className={clsx('flex gap-1.5 px-[1ch] py-1', item.className)}
+        >
+          {item.element}
+        </div>
+      ))}
     </footer>
   )
 }

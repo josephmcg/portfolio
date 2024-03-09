@@ -1,5 +1,5 @@
 const navItems = [
-  { label: 'Personal', href: '/' },
+  { label: 'Joe', href: '/' },
   { label: 'Work', href: '/work' },
   { label: 'Uses', href: '/uses' },
   { label: 'GitHub', href: '' },
