@@ -20,7 +20,7 @@ export default {
         minimize: '#FFBD44',
         maximize: '#00CA4E',
         // one dark colors
-        primary: '#282c34',
+        primary: 'var(--primary)',
         secondary: '#21252b',
         plain: '#abb2bf',
         light: '#9da5b4',
