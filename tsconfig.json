@@ -3,7 +3,8 @@
   "compilerOptions": {
     "paths": {
       "~/*": ["./src/*"]
-    }
+    },
+    "verbatimModuleSyntax": true
   },
   "include": [
     "next-env.d.ts",

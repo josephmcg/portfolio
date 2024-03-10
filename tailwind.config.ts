@@ -1,4 +1,4 @@
-import { Config } from 'tailwindcss'
+import type { Config } from 'tailwindcss'
 
 export default {
   content: [
@@ -20,7 +20,7 @@ export default {
         minimize: '#FFBD44',
         maximize: '#00CA4E',
         // one dark colors
-        primary: 'var(--primary)',
+        primary: '#282c34',
         secondary: '#21252b',
         plain: '#abb2bf',
         light: '#9da5b4',

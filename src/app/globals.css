@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 :root {
-  --primary: #282c34;
-  --scrollbar-color-track: var(--primary);
+  /* primary color */
+  --scrollbar-color-track: #282c34;
   /* plain color w/ 25% opacity */
   --scrollbar-color-thumb: rgba(171, 178, 191, 0.25);
   --scrollbar-width: thin;
@@ -15,6 +15,7 @@ body {
   @apply bg-slate-900 text-plain;
 }
 
+/* https://developer.chrome.com/docs/css-ui/scrollbar-styling#supporting_older_browser_versions */
 /* Modern browsers with `scrollbar-*` support */
 @supports (scrollbar-width: auto) {
   * {
