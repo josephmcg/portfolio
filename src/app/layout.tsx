@@ -6,7 +6,6 @@ import { Inter } from 'next/font/google'
 
 import { Footer } from '~/components/Footer'
 import { Header } from '~/components/Header/Header'
-import { Terminal } from '~/components/Terminal/Terminal'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -30,7 +29,9 @@ export default function RootLayout({
       >
         <div className="flex h-[37.5rem] w-full max-w-5xl flex-col overflow-hidden rounded-lg bg-primary shadow-2xl">
           <Header />
-          <Terminal>{children}</Terminal>
+          <main className="flex-1 overflow-auto">
+            <pre className="py-4">{children}</pre>
+          </main>
           <Footer />
         </div>
       </body>

@@ -2,21 +2,27 @@ import { TerminalLineDeclaration } from '~/components/Terminal/Line/LineDeclarat
 import { TerminalLineString } from '~/components/Terminal/Line/LineString'
 import type { Line, LineStandard } from '~/types'
 
-type Props = {
-  line: Line
+type LineContainerProps = {
   lineNumber: number
 }
 
-const LineGutter: React.FC<{ lineNumber: Props['lineNumber'] }> = ({
+const LineContainer: React.FC<React.PropsWithChildren<LineContainerProps>> = ({
   lineNumber,
+  children,
 }) => {
   return (
-    <div className="w-[4ch] flex-shrink-0 select-none pr-[2ch] text-right text-gray-500/40 md:w-[6ch]">
-      <span>{lineNumber}</span>
+    <div className="relative flex px-4">
+      <div className="w-[4ch] flex-shrink-0 select-none pr-[2ch] text-right text-gray-500/40 md:w-[6ch]">
+        <span>{lineNumber}</span>
+      </div>
+      <div className="relative selection:bg-dark/25">{children}</div>
     </div>
   )
 }
 
+/*
+ * If the line has an indent, render a span with the appropriate number of spaces
+ */
 const LineIndent: React.FC<{ indent: LineStandard['indent'] }> = ({
   indent,
 }) => {
@@ -27,34 +33,60 @@ const LineIndent: React.FC<{ indent: LineStandard['indent'] }> = ({
   return <span>{' '.repeat(indent * 2)}</span>
 }
 
-export const TerminalLine: React.FC<Props> = ({ line, lineNumber }) => {
+type TerminalLineProps = {
+  line: Line
+  lineNumber: number
+}
+
+export const TerminalLine: React.FC<TerminalLineProps> = ({
+  line,
+  lineNumber,
+}) => {
   if (line.isEmpty) {
-    return <LineGutter lineNumber={lineNumber} />
+    return <LineContainer lineNumber={lineNumber} />
   }
 
-  return (
-    <div className="relative flex px-4">
-      <LineGutter lineNumber={lineNumber} />
-      <div className="relative selection:bg-dark/25">
+  if ('declaration' in line) {
+    return (
+      <LineContainer lineNumber={lineNumber}>
         <LineIndent indent={line.indent} />
-        {'declaration' in line ? (
-          <TerminalLineDeclaration line={line} />
-        ) : line.type === 'string' ? (
-          <TerminalLineString>{line.value}</TerminalLineString>
-        ) : (
-          <span
-            className={line.type === 'bracket' ? 'text-plain' : 'text-hue6'}
-          >
-            {line.value}
-          </span>
-        )}
+        <TerminalLineDeclaration line={line} />
         {line.indent ? ',' : ''}
         {line.comment ? (
           <span className="text-dark">{` // ${line.comment}`}</span>
         ) : (
           ''
         )}
-      </div>
-    </div>
+      </LineContainer>
+    )
+  }
+
+  if (line.type === 'string') {
+    return (
+      <LineContainer lineNumber={lineNumber}>
+        <LineIndent indent={line.indent} />
+        <TerminalLineString>{line.value}</TerminalLineString>
+        {line.indent ? ',' : ''}
+        {line.comment ? (
+          <span className="text-dark">{` // ${line.comment}`}</span>
+        ) : (
+          ''
+        )}
+      </LineContainer>
+    )
+  }
+
+  return (
+    <LineContainer lineNumber={lineNumber}>
+      <span className={line.type === 'bracket' ? 'text-plain' : 'text-hue6'}>
+        {line.value}
+      </span>
+      {line.indent ? ',' : ''}
+      {line.comment ? (
+        <span className="text-dark">{` // ${line.comment}`}</span>
+      ) : (
+        ''
+      )}
+    </LineContainer>
   )
 }

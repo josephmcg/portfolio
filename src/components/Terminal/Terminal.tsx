@@ -59,14 +59,8 @@ const lines: Line[] = [
   { isEmpty: true },
 ]
 
-export const Terminal: React.FC<React.PropsWithChildren> = ({ children }) => {
-  return (
-    <main className="flex-1 overflow-auto">
-      <pre className="relative py-4 text-gray-400">
-        {lines.map((line, i) => (
-          <TerminalLine key={i} line={line} lineNumber={i + 1} />
-        ))}
-      </pre>
-    </main>
-  )
+export const Terminal: React.FC = () => {
+  return lines.map((line, i) => (
+    <TerminalLine key={i} line={line} lineNumber={i + 1} />
+  ))
 }
