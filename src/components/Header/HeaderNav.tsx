@@ -5,7 +5,7 @@ const navItems = [
   { label: 'GitHub', href: '' },
 ]
 
-export const TerminalNav: React.FC = () => {
+export const HeaderNav: React.FC = () => {
   return (
     <div className="flex divide-x divide-gray-600/70 font-mono text-xs uppercase text-gray-400">
       {navItems.map((item) => (

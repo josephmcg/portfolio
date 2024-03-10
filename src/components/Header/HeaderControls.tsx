@@ -23,7 +23,7 @@ const buttons = [
   },
 ] as const
 
-export const TerminalControls: React.FC = () => {
+export const HeaderControls: React.FC = () => {
   return (
     <div className="group flex items-center gap-2">
       {buttons.map((button, i) => (

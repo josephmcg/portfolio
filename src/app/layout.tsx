@@ -4,6 +4,10 @@ import clsx from 'clsx'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
+import { Footer } from '~/components/Footer'
+import { Header } from '~/components/Header/Header'
+import { Terminal } from '~/components/Terminal'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -24,7 +28,11 @@ export default function RootLayout({
           'flex min-h-[90vh] items-center justify-center p-[24px]',
         )}
       >
-        {children}
+        <div className="flex h-[37.5rem] w-full max-w-5xl flex-col overflow-hidden rounded-lg bg-primary shadow-2xl">
+          <Header />
+          <Terminal>{children}</Terminal>
+          <Footer />
+        </div>
       </body>
     </html>
   )
