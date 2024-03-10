@@ -10,7 +10,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
+    "lint": "pnpm run '/^lint:.*/'",
+    "lint:next": "next lint",
+    "lint:tsc": "tsc --noEmit",
     "analyze": "cross-env ANALYZE=true next build"
   },
   "dependencies": {
