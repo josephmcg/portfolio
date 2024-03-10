@@ -1,4 +1,4 @@
-import { TerminalLine } from '~/components/Terminal/Line/Line'
+import { EditorLine } from '~/components/Editor/Line/Line'
 import type { Line } from '~/types'
 
 const lines: Line[] = [
@@ -59,8 +59,8 @@ const lines: Line[] = [
   { isEmpty: true },
 ]
 
-export const Terminal: React.FC = () => {
+export const Editor: React.FC = () => {
   return lines.map((line, i) => (
-    <TerminalLine key={i} line={line} lineNumber={i + 1} />
+    <EditorLine key={i} line={line} lineNumber={i + 1} />
   ))
 }

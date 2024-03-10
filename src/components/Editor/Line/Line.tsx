@@ -1,5 +1,5 @@
-import { TerminalLineDeclaration } from '~/components/Terminal/Line/LineDeclaration'
-import { TerminalLineString } from '~/components/Terminal/Line/LineString'
+import { EditorLineDeclaration } from '~/components/Editor/Line/LineDeclaration'
+import { EditorLineString } from '~/components/Editor/Line/LineString'
 import type { Line, LineStandard } from '~/types'
 
 type LineContainerProps = {
@@ -33,15 +33,12 @@ const LineIndent: React.FC<{ indent: LineStandard['indent'] }> = ({
   return <span>{' '.repeat(indent * 2)}</span>
 }
 
-type TerminalLineProps = {
+type EditorLineProps = {
   line: Line
   lineNumber: number
 }
 
-export const TerminalLine: React.FC<TerminalLineProps> = ({
-  line,
-  lineNumber,
-}) => {
+export const EditorLine: React.FC<EditorLineProps> = ({ line, lineNumber }) => {
   if (line.isEmpty) {
     return <LineContainer lineNumber={lineNumber} />
   }
@@ -50,7 +47,7 @@ export const TerminalLine: React.FC<TerminalLineProps> = ({
     return (
       <LineContainer lineNumber={lineNumber}>
         <LineIndent indent={line.indent} />
-        <TerminalLineDeclaration line={line} />
+        <EditorLineDeclaration line={line} />
         {line.indent ? ',' : ''}
         {line.comment ? (
           <span className="text-dark">{` // ${line.comment}`}</span>
@@ -65,7 +62,7 @@ export const TerminalLine: React.FC<TerminalLineProps> = ({
     return (
       <LineContainer lineNumber={lineNumber}>
         <LineIndent indent={line.indent} />
-        <TerminalLineString>{line.value}</TerminalLineString>
+        <EditorLineString>{line.value}</EditorLineString>
         {line.indent ? ',' : ''}
         {line.comment ? (
           <span className="text-dark">{` // ${line.comment}`}</span>
