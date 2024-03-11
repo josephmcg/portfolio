@@ -2,12 +2,9 @@ import './globals.css'
 
 import clsx from 'clsx'
 import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
 
 import { Footer } from '~/components/Footer'
 import { Header } from '~/components/Header/Header'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -23,7 +20,6 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={clsx(
-          inter.className,
           'flex min-h-svh items-center justify-center md:min-h-[90vh] md:p-[24px]',
         )}
       >

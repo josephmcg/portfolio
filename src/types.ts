@@ -1,12 +1,8 @@
-type LineEmpty = {
-  isEmpty: true
-}
-
 export type LineStandard = {
   value: string
   type: 'string' | 'number' | 'boolean' | 'bracket'
   indent?: number
-  comment?: string
+  comment?: React.ReactNode
   isEmpty?: false
 }
 
@@ -15,4 +11,15 @@ export type LineDeclaration = LineStandard & {
   name: string
 }
 
-export type Line = LineDeclaration | LineStandard | LineEmpty
+export type LineComment = {
+  type: 'comment'
+  indent?: number
+  comment: React.ReactNode
+  isEmpty?: false
+}
+
+type LineEmpty = {
+  isEmpty: true
+}
+
+export type Line = LineStandard | LineDeclaration | LineComment | LineEmpty

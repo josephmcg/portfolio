@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "UNLICENSED",
-  "packageManager": "pnpm@8.14.3",
+  "packageManager": "pnpm@8.15.4",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "prepare": "husky",

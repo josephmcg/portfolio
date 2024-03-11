@@ -1,3 +1,4 @@
+import { EditorLineComment } from '~/components/Editor/Line/LineComment'
 import { EditorLineDeclaration } from '~/components/Editor/Line/LineDeclaration'
 import { EditorLineString } from '~/components/Editor/Line/LineString'
 import type { Line, LineStandard } from '~/types'
@@ -49,11 +50,16 @@ export const EditorLine: React.FC<EditorLineProps> = ({ line, lineNumber }) => {
         <LineIndent indent={line.indent} />
         <EditorLineDeclaration line={line} />
         {line.indent ? ',' : ''}
-        {line.comment ? (
-          <span className="text-dark">{` // ${line.comment}`}</span>
-        ) : (
-          ''
-        )}
+        <EditorLineComment line={line} />
+      </LineContainer>
+    )
+  }
+
+  if (line.type === 'comment') {
+    return (
+      <LineContainer lineNumber={lineNumber}>
+        <LineIndent indent={line.indent} />
+        <EditorLineComment line={line} />
       </LineContainer>
     )
   }
@@ -64,11 +70,7 @@ export const EditorLine: React.FC<EditorLineProps> = ({ line, lineNumber }) => {
         <LineIndent indent={line.indent} />
         <EditorLineString>{line.value}</EditorLineString>
         {line.indent ? ',' : ''}
-        {line.comment ? (
-          <span className="text-dark">{` // ${line.comment}`}</span>
-        ) : (
-          ''
-        )}
+        <EditorLineComment line={line} />
       </LineContainer>
     )
   }
@@ -79,11 +81,7 @@ export const EditorLine: React.FC<EditorLineProps> = ({ line, lineNumber }) => {
         {line.value}
       </span>
       {line.indent ? ',' : ''}
-      {line.comment ? (
-        <span className="text-dark">{` // ${line.comment}`}</span>
-      ) : (
-        ''
-      )}
+      <EditorLineComment line={line} />
     </LineContainer>
   )
 }
