@@ -23,7 +23,7 @@ export default function RootLayout({
           'flex min-h-svh items-center justify-center md:min-h-[90vh] md:p-[24px]',
         )}
       >
-        <div className="flex h-svh w-full max-w-5xl flex-col overflow-hidden bg-primary shadow-2xl md:h-[37.5rem] md:rounded-lg">
+        <div className="flex h-svh w-full max-w-5xl flex-col overflow-hidden bg-primary shadow-2xl md:h-[42rem] md:rounded-lg">
           <Header />
           <main className="flex-1 overflow-auto">
             <pre className="py-4">{children}</pre>

@@ -8,6 +8,7 @@ const lines: Line[] = [
     value: 'Joe McGrath',
     type: 'string',
   },
+  { isEmpty: true },
   {
     declaration: 'let',
     name: 'place',

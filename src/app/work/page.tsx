@@ -3,15 +3,6 @@ import type { Line } from '~/types'
 
 const lines: Line[] = [
   {
-    declaration: 'let',
-    name: 'title',
-    value: 'Senior Software Engineer',
-    type: 'string',
-  },
-  {
-    isEmpty: true,
-  },
-  {
     type: 'comment',
     comment: (
       <a className="underline" href="https://migaku.com" target="_blank">
@@ -24,6 +15,40 @@ const lines: Line[] = [
     name: 'employer',
     value: 'Migaku',
     type: 'string',
+  },
+  {
+    declaration: 'let',
+    name: 'title',
+    value: 'Senior Software Engineer',
+    type: 'string',
+  },
+  {
+    isEmpty: true,
+  },
+  {
+    declaration: 'let',
+    name: 'skills',
+    value: '[',
+    type: 'bracket',
+  },
+  {
+    value: 'programming',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'project management',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'figuring things out',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: ']',
+    type: 'bracket',
   },
   {
     isEmpty: true,
