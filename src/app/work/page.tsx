@@ -5,10 +5,13 @@ const lines: Line[] = [
   {
     type: 'comment',
     comment: (
-      <a className="underline" href="https://migaku.com" target="_blank">
-        https://migaku.com
-      </a>
-    ), // https://migaku.com
+      <>
+        <a className="underline" href="https://migaku.com" target="_blank">
+          https://migaku.com
+        </a>
+        <span> - I built this website :)</span>
+      </>
+    ),
   },
   {
     declaration: 'let',
@@ -91,12 +94,12 @@ const lines: Line[] = [
     value: 'React',
     type: 'string',
     indent: 1,
+    comment: 'technically a library, but let’s be real',
   },
   {
     value: 'Next.js',
     type: 'string',
     indent: 1,
-    comment: 'this project!',
   },
   {
     value: 'Vue',
