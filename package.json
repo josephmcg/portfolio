@@ -9,7 +9,7 @@
     "prepare": "husky",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "serve out",
     "lint": "pnpm run '/^lint:.*/'",
     "lint:next": "next lint",
     "lint:tsc": "tsc --noEmit",
