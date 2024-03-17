@@ -9,7 +9,7 @@ const nextConfig = {
   output: 'export',
   reactStrictMode: true,
   swcMinify: true,
-  productionBrowserSourceMaps: true,
+  poweredByHeader: false,
 }
 
 export default withBundleAnalyzer(nextConfig)

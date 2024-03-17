@@ -10,21 +10,19 @@ export default {
   },
   theme: {
     extend: {
-      maxWidth: {
-        outer: '94.5rem', // 1512px
-        inner: '86.5rem', // 1384px
-      },
       colors: {
         // macos window controls
         close: '#FF605C',
         minimize: '#FFBD44',
         maximize: '#00CA4E',
-        // one dark colors
+        // background colors
         primary: '#282c34',
         secondary: '#21252b',
+        // text colors
         plain: '#abb2bf',
         light: '#9da5b4',
         dark: '#5c6370',
+        // text accent colors
         hue1: '#56b6c2',
         hue2: '#61aeee',
         hue3: '#c678dd',
