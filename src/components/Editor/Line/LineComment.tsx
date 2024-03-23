@@ -1,3 +1,5 @@
+import clsx from 'clsx'
+
 import type { LineComment, LineDeclaration, LineStandard } from '~/types'
 
 type Props = {
@@ -9,10 +11,14 @@ export const EditorLineComment: React.FC<Props> = ({ line }) => {
     return
   }
 
+  const classes = clsx('italic text-dark [text-underline-position:under]', {
+    'hidden md:inline-flex': line.isCommentHiddenOnSmallScreens,
+  })
+
   // if only a comment, don't apply any leading space
   if (line.type === 'comment') {
     return (
-      <span className="italic text-dark [text-underline-position:under]">
+      <span className={classes}>
         <span>{'// '}</span>
         {line.comment}
       </span>
@@ -21,7 +27,7 @@ export const EditorLineComment: React.FC<Props> = ({ line }) => {
 
   // if comment follows a value, apply a leading space
   return (
-    <span className="italic text-dark [text-underline-position:under]">
+    <span className={classes}>
       <span>{' // '}</span>
       {line.comment}
     </span>

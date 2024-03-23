@@ -9,7 +9,7 @@ const lines: Line[] = [
         <a className="underline" href="https://migaku.com" target="_blank">
           https://migaku.com
         </a>
-        <span> - I built this website :)</span>
+        <span> - I made this</span>
       </>
     ),
   },
@@ -95,6 +95,7 @@ const lines: Line[] = [
     type: 'string',
     indent: 1,
     comment: 'technically a library, but let’s be real',
+    isCommentHiddenOnSmallScreens: true,
   },
   {
     value: 'Next.js',
