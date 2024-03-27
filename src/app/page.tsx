@@ -26,7 +26,7 @@ const lines: Line[] = [
     value: 'music',
     type: 'string',
     indent: 1,
-    comment: 'Bowie, The Smiths, J Dilla, to name a few',
+    comment: 'David Bowie, The Smiths, J Dilla, to name a few',
     isCommentHiddenOnSmallScreens: true,
   },
   {
