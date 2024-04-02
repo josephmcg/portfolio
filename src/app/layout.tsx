@@ -25,9 +25,7 @@ export default function RootLayout({
       >
         <div className="flex h-svh w-full max-w-5xl flex-col overflow-hidden bg-primary shadow-2xl md:h-[42rem] md:rounded-lg">
           <Header />
-          <main className="flex-1 overflow-auto">
-            <pre className="py-4">{children}</pre>
-          </main>
+          <main className="flex-1 overflow-auto">{children}</main>
           <Footer />
         </div>
       </body>

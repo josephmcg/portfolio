@@ -6,7 +6,11 @@ type Props = {
 }
 
 export const Editor: React.FC<Props> = ({ lines }) => {
-  return lines.map((line, i) => (
-    <EditorLine key={i} line={line} lineNumber={i + 1} />
-  ))
+  return (
+    <pre className="py-4">
+      {lines.map((line, i) => (
+        <EditorLine key={i} line={line} lineNumber={i + 1} />
+      ))}
+    </pre>
+  )
 }
