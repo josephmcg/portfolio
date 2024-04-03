@@ -6,7 +6,11 @@ const lines: Line[] = [
     type: 'comment',
     comment: (
       <>
-        <a className="underline" href="https://migaku.com" target="_blank">
+        <a
+          className="hover:text-link underline"
+          href="https://migaku.com"
+          target="_blank"
+        >
           https://migaku.com
         </a>
         <span> - I made this</span>
@@ -41,6 +45,11 @@ const lines: Line[] = [
   },
   {
     value: 'project management',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'balancing simplicity/functionality',
     type: 'string',
     indent: 1,
   },

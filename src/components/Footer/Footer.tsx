@@ -1,6 +1,9 @@
 import clsx from 'clsx'
 import React from 'react'
 
+import { FooterFile } from '~/components/Footer/FooterFile'
+import { FooterLanguage } from '~/components/Footer/FooterLanguage'
+
 const TerminalBranch: React.FC = () => {
   return (
     <svg
@@ -18,35 +21,35 @@ type Item = {
   element: React.ReactNode
 }
 
-const items: Item[] = [
-  {
-    element: (
-      <>
-        <TerminalBranch /> main
-      </>
-    ),
-  },
-  {
-    element: './joe.ts',
-  },
-  {
-    // hilarious false positive
-    // eslint-disable-next-line unicorn/text-encoding-identifier-case
-    element: 'UTF-8',
-    className: clsx('ml-auto'),
-  },
-  {
-    element: 'LF',
-  },
-  {
-    element: '{}',
-  },
-  {
-    element: 'TypeScript',
-  },
-]
-
 export const Footer: React.FC = () => {
+  const items: Item[] = [
+    {
+      element: (
+        <>
+          <TerminalBranch /> main
+        </>
+      ),
+    },
+    {
+      element: <FooterFile />,
+    },
+    {
+      // hilarious false positive
+      // eslint-disable-next-line unicorn/text-encoding-identifier-case
+      element: 'UTF-8',
+      className: clsx('ml-auto'),
+    },
+    {
+      element: 'LF',
+    },
+    {
+      element: '{}',
+    },
+    {
+      element: <FooterLanguage />,
+    },
+  ]
+
   return (
     <footer className="flex bg-secondary font-mono text-sm text-light shadow">
       {items.map((item, index) => (

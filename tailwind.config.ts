@@ -31,6 +31,7 @@ export default {
         'hue5-secondary': '#be5046',
         hue6: '#d19a66',
         'hue6-secondary': '#e6c07b',
+        link: '#4e94ce',
       },
     },
   },

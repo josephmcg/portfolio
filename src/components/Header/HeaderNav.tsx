@@ -1,7 +1,9 @@
+import { routes } from '~/constants'
+
 const navItems = [
-  { label: 'Joe', href: '/' },
-  { label: 'Work', href: '/work' },
-  { label: 'Uses', href: '/uses' },
+  { label: 'Joe', href: routes.index },
+  { label: 'Work', href: routes.work },
+  { label: 'Uses', href: routes.uses },
   { label: 'GitHub', href: 'https://github.com/josephmcg', external: true },
 ]
 
