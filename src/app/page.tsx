@@ -53,6 +53,12 @@ const lines: Line[] = [
     indent: 1,
   },
   {
+    value: 'games',
+    type: 'string',
+    indent: 1,
+    comment: 'Smash bros, SNES, indie games',
+  },
+  {
     value: 'gym',
     type: 'string',
     indent: 1,

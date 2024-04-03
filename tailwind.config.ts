@@ -18,6 +18,7 @@ export default {
         // background colors
         primary: '#282c34',
         secondary: '#21252b',
+        divider: 'rgba(255, 255, 255, 0.18)',
         // text colors
         plain: '#abb2bf',
         light: '#9da5b4',
