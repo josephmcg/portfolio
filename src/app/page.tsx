@@ -18,7 +18,7 @@ const lines: Line[] = [
   { isEmpty: true },
   {
     declaration: 'let',
-    name: 'hobbies',
+    name: 'likes',
     value: '[',
     type: 'bracket',
   },
