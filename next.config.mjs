@@ -10,9 +10,6 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   poweredByHeader: false,
-  experimental: {
-    typedRoutes: true,
-  },
 }
 
 export default withBundleAnalyzer(nextConfig)

@@ -1,8 +1,8 @@
 'use client'
 
-import clsx from 'clsx'
 import { usePathname } from 'next/navigation'
 
+import { HeaderNavItem } from '~/components/Header/HeaderNavItem'
 import { routes } from '~/constants'
 
 const navItems = [
@@ -18,19 +18,11 @@ export const HeaderNav: React.FC = () => {
   return (
     <div className="flex divide-x divide-gray-600/70 font-mono text-xs uppercase">
       {navItems.map((item) => (
-        <a
-          key={item.label}
-          className={clsx(
-            'px-3 py-1 hover:text-gray-200',
-            pathname === item.href ? 'text-gray-200' : 'text-gray-400',
-          )}
-          href={item.href}
-          target={
-            Object.values(routes).includes(item.href) ? undefined : '_blank'
-          }
-        >
-          {item.label}
-        </a>
+        <HeaderNavItem
+          key={item.href}
+          isActive={pathname === item.href}
+          {...item}
+        />
       ))}
     </div>
   )

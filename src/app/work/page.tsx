@@ -7,7 +7,7 @@ const lines: Line[] = [
     comment: (
       <>
         <a
-          className="hover:text-link underline"
+          className="underline hover:text-link"
           href="https://migaku.com"
           target="_blank"
         >
@@ -87,6 +87,17 @@ const lines: Line[] = [
     indent: 1,
   },
   {
+    value: 'PHP',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'Java',
+    type: 'string',
+    indent: 1,
+    comment: 'in my college days',
+  },
+  {
     value: ']',
     type: 'bracket',
   },
@@ -95,9 +106,14 @@ const lines: Line[] = [
   },
   {
     declaration: 'let',
-    name: 'frameworks',
+    name: 'experience',
     value: '[',
     type: 'bracket',
+  },
+  {
+    type: 'comment',
+    comment: 'frameworks',
+    indent: 1,
   },
   {
     value: 'React',
@@ -107,12 +123,12 @@ const lines: Line[] = [
     isCommentHiddenOnSmallScreens: true,
   },
   {
-    value: 'Next.js',
+    value: 'Vue',
     type: 'string',
     indent: 1,
   },
   {
-    value: 'Vue',
+    value: 'Next.js',
     type: 'string',
     indent: 1,
   },
@@ -123,6 +139,40 @@ const lines: Line[] = [
   },
   {
     value: 'Astro',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    type: 'comment',
+    comment: 'miscellaneous',
+    indent: 1,
+  },
+  {
+    value: 'Chrome extension development',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'in-house component libraries',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'reusable project config packages',
+    type: 'string',
+    indent: 1,
+    comment: (
+      <a
+        className="underline hover:text-link"
+        href="https://github.com/josephmcg/config"
+        target="_blank"
+      >
+        https://github.com/josephmcg/config
+      </a>
+    ),
+  },
+  {
+    value: 'hybrid app development and leadership',
     type: 'string',
     indent: 1,
   },

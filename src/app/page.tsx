@@ -33,7 +33,7 @@ const lines: Line[] = [
     value: 'vintage clothes',
     type: 'string',
     indent: 1,
-    comment: '90s Nike, Levis, LL Bean, for instance',
+    comment: '90s Nike, Levis, LL Bean',
     isCommentHiddenOnSmallScreens: true,
   },
   {
@@ -57,6 +57,7 @@ const lines: Line[] = [
     type: 'string',
     indent: 1,
     comment: 'Smash bros, SNES, indie games',
+    isCommentHiddenOnSmallScreens: true,
   },
   {
     value: 'gym',
