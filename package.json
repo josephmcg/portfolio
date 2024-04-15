@@ -27,7 +27,7 @@
     "@josephmcg/tsconfig": "^0.0.9",
     "@next/bundle-analyzer": "^14.1.4",
     "@total-typescript/ts-reset": "^0.5.1",
-    "@types/node": "20.12.4",
+    "@types/node": "20.12.7",
     "@types/react": "18.2.74",
     "@types/react-dom": "18.2.24",
     "autoprefixer": "10.4.19",
