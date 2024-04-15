@@ -25,7 +25,7 @@
     "@josephmcg/eslint-config-next": "^0.0.30",
     "@josephmcg/prettier-config": "^0.0.10",
     "@josephmcg/tsconfig": "^0.0.9",
-    "@next/bundle-analyzer": "^14.1.4",
+    "@next/bundle-analyzer": "^14.2.1",
     "@total-typescript/ts-reset": "^0.5.1",
     "@types/node": "20.12.4",
     "@types/react": "18.2.74",
