@@ -1,3 +1,9 @@
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Uses',
+}
+
 type Item = {
   title: string
   url: string
@@ -22,6 +28,13 @@ const categories: Category[] = [
       {
         title: 'Dell 27" 4k Monitor',
         url: 'https://www.amazon.co.jp/-/en/gp/product/B09CGY99X5',
+        description:
+          'Solid general-purpose monitor. Supports both HDMI and USB-C',
+      },
+      {
+        title: 'Ergotron Monitor Arm',
+        url: 'https://www.amazon.co.jp/-/en/gp/product/B07Q8TJ2KL',
+        description: 'I use this w/ the Dell ^',
       },
       {
         title: 'Keychron K8 (Gateron brown)',
@@ -43,7 +56,7 @@ const categories: Category[] = [
         title: 'Bose QuietComfort 35 II',
         url: 'https://global.bose.com/content/consumer_electronics/b2c_catalog/worldwide/websites/en_ae/product/qc35_ii.html',
         description:
-          'Great for noise cancelling, comfortable for long periods of time',
+          'Great noise cancelling, comfortable for long periods of time',
       },
       {
         title: 'Sony WF-1000XM4',
@@ -69,19 +82,11 @@ const categories: Category[] = [
   },
 
   {
-    heading: 'Tooling',
+    heading: 'Programming',
     items: [
       {
-        title: 'Autoraise',
-        url: 'https://github.com/sbmpost/AutoRaise',
-        description:
-          'Saved me thousands of clicks when using multiple monitors on Mac',
-      },
-      {
-        title: 'Discrete Scroll',
-        url: 'https://github.com/emreyolcu/discrete-scroll',
-        description:
-          'Quality of life improvement when using a mouse scroll wheel on Mac',
+        title: 'VS Code',
+        url: 'https://code.visualstudio.com',
       },
       {
         title: 'kitty',
@@ -91,14 +96,31 @@ const categories: Category[] = [
       {
         title: 'Powerlevel10k',
         url: 'https://github.com/romkatv/powerlevel10k',
-        description:
-          'Customize your terminal prompt to show git info (and more!)',
+        description: 'Displays valuable git info in my terminal prompt',
       },
+    ],
+  },
+
+  {
+    heading: 'Miscellaneous Software',
+    items: [
+      {
+        title: 'Autoraise',
+        url: 'https://github.com/sbmpost/AutoRaise',
+        description:
+          'Focuses a window on pointer hover. This has saved me thousands of clicks when using multiple monitors on Mac',
+      },
+      {
+        title: 'Discrete Scroll',
+        url: 'https://github.com/emreyolcu/discrete-scroll',
+        description: 'Quality of life improvement when using a mouse on Mac',
+      },
+
       {
         title: 'Rectangle',
         url: 'https://rectangleapp.com',
         description:
-          'Window manager, adds helpful hotkeys to move and resize windows easily',
+          'Window manager, helpful hotkeys to move and resize windows',
       },
     ],
   },
@@ -109,7 +131,7 @@ export default function Uses(): React.JSX.Element {
     <div className="flex flex-col gap-10 px-8 py-4">
       {categories.map((category) => (
         <div key={category.heading} className="flex flex-col gap-4">
-          <h2 className="border-divider border-b pb-2.5 text-xl">
+          <h2 className="border-b border-divider pb-2.5 text-xl">
             {category.heading}
           </h2>
           <ul className="flex list-disc flex-col gap-4 pl-4">
