@@ -9,7 +9,7 @@ import { Header } from '~/components/Header/Header'
 export const metadata: Metadata = {
   title: {
     template: `Joe McGrath - %s`,
-    default: `Joe McGrath`,
+    default: `Joe McGrath - Software Engineer`,
   },
   description: 'Joe McGrath is a software engineer based in Tokyo, Japan.',
 }

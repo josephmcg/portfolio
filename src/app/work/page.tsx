@@ -11,16 +11,13 @@ const lines: Line[] = [
   {
     type: 'comment',
     comment: (
-      <>
-        <a
-          className="underline hover:text-link"
-          href="https://migaku.com"
-          target="_blank"
-        >
-          https://migaku.com
-        </a>
-        <span> - I made this</span>
-      </>
+      <a
+        className="underline hover:text-link"
+        href="https://migaku.com"
+        target="_blank"
+      >
+        https://migaku.com
+      </a>
     ),
   },
   {
@@ -51,11 +48,6 @@ const lines: Line[] = [
   },
   {
     value: 'project management',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'balancing simplicity/functionality',
     type: 'string',
     indent: 1,
   },
@@ -178,7 +170,12 @@ const lines: Line[] = [
     ),
   },
   {
-    value: 'hybrid app development and leadership',
+    value: 'hybrid app development',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'cross functional team leadership',
     type: 'string',
     indent: 1,
   },

@@ -23,7 +23,7 @@ const categories: Category[] = [
         title: '2021 16" MacBook Pro, M1 Pro, 16GB RAM, 512GB SSD',
         url: 'https://support.apple.com/en-us/111901',
         description:
-          "I've never heard the fans spin up, that's how good this thing is",
+          "I've never heard the fans spin up on this thing, I love it",
       },
       {
         title: 'Dell 27" 4k Monitor',
@@ -45,6 +45,8 @@ const categories: Category[] = [
       {
         title: 'Razer Deathadder V2 Pro',
         url: 'https://www.amazon.com/Razer-DeathAdder-Wireless-Gaming-Mouse/dp/B08FQMBKQG',
+        description:
+          'Great for general use and gaming, the thumb buttons are handy',
       },
     ],
   },
