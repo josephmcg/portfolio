@@ -4,7 +4,6 @@ export type LineStandard = {
   indent?: number
   comment?: React.ReactNode
   isCommentHiddenOnSmallScreens?: boolean
-  isEmpty?: false
 }
 
 export type LineDeclaration = LineStandard & {
@@ -17,11 +16,10 @@ export type LineComment = {
   indent?: number
   comment: React.ReactNode
   isCommentHiddenOnSmallScreens?: boolean
-  isEmpty?: false
 }
 
 type LineEmpty = {
-  isEmpty: true
+  type: 'empty'
 }
 
 export type Line = LineStandard | LineDeclaration | LineComment | LineEmpty

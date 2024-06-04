@@ -8,14 +8,14 @@ const lines: Line[] = [
     value: 'Joe McGrath',
     type: 'string',
   },
-  { isEmpty: true },
+  { type:'empty' },
   {
     declaration: 'let',
     name: 'place',
     value: 'Tokyo, Japan',
     type: 'string',
   },
-  { isEmpty: true },
+  { type:'empty' },
   {
     declaration: 'let',
     name: 'likes',
@@ -68,7 +68,7 @@ const lines: Line[] = [
     value: ']',
     type: 'bracket',
   },
-  { isEmpty: true },
+  { type:'empty' },
 ]
 
 export default function Home(): React.JSX.Element {

@@ -40,7 +40,7 @@ type EditorLineProps = {
 }
 
 export const EditorLine: React.FC<EditorLineProps> = ({ line, lineNumber }) => {
-  if (line.isEmpty) {
+  if (line.type === 'empty') {
     return <LineContainer lineNumber={lineNumber} />
   }
 
