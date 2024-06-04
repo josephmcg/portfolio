@@ -33,7 +33,7 @@ const lines: Line[] = [
     type: 'string',
   },
   {
-    type:'empty',
+    type: 'empty',
   },
   {
     declaration: 'let',
@@ -61,7 +61,7 @@ const lines: Line[] = [
     type: 'bracket',
   },
   {
-    type:'empty',
+    type: 'empty',
   },
   {
     declaration: 'let',
@@ -100,7 +100,7 @@ const lines: Line[] = [
     type: 'bracket',
   },
   {
-    type:'empty',
+    type: 'empty',
   },
   {
     declaration: 'let',
