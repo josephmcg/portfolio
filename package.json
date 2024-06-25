@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@heroicons/react": "^2.1.4",
-    "@josephmcg/eslint-config-next": "^0.0.39",
+    "@josephmcg/eslint-config-next": "^0.0.40",
     "@josephmcg/prettier-config": "^0.0.15",
     "@josephmcg/tsconfig": "^0.0.9",
     "@next/bundle-analyzer": "^14.2.4",
