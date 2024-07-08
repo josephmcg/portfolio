@@ -28,8 +28,8 @@ importers:
         specifier: ^0.0.15
         version: 0.0.15
       '@josephmcg/tsconfig':
-        specifier: ^0.0.9
-        version: 0.0.9
+        specifier: ^1.0.0
+        version: 1.0.0
       '@next/bundle-analyzer':
         specifier: ^14.2.4
         version: 14.2.4
@@ -142,8 +142,8 @@ packages:
   '@josephmcg/prettier-config@0.0.15':
     resolution: {integrity: sha512-IrOU8XlrFy2qKdTILDWgeSOfVMxD6HmykpjxQE75scOTqWj/6ueIM+oMjQ20Fynvcwwd4KqHT5qqn2xRLtjM6w==}
 
-  '@josephmcg/tsconfig@0.0.9':
-    resolution: {integrity: sha512-QkWrZPtDn1SYMH40QtUNSjtdIJBrpInEGDbUChMksiy3eIA03ELh/A1hRDBVkMarKDB/xHo7C3iE/62fCVnRkg==}
+  '@josephmcg/tsconfig@1.0.0':
+    resolution: {integrity: sha512-E2EWsRfa6K0S9pjXvY27RHQOm0+IaGZaZUQv+GpHXHpxnJkq/iPRPRZ6MSnOI4Z9jGt7969sZ5U6eCSo3HtacA==}
 
   '@jridgewell/gen-mapping@0.3.5':
     resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
@@ -2301,7 +2301,7 @@ snapshots:
       - prettier-plugin-style-order
       - prettier-plugin-svelte
 
-  '@josephmcg/tsconfig@0.0.9': {}
+  '@josephmcg/tsconfig@1.0.0': {}
 
   '@jridgewell/gen-mapping@0.3.5':
     dependencies:
