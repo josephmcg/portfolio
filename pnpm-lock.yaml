@@ -25,8 +25,8 @@ importers:
         specifier: ^0.0.41
         version: 0.0.41(typescript@5.5.3)
       '@josephmcg/prettier-config':
-        specifier: ^0.0.15
-        version: 0.0.15
+        specifier: ^1.0.0
+        version: 1.0.0
       '@josephmcg/tsconfig':
         specifier: ^0.0.9
         version: 0.0.9
@@ -139,8 +139,8 @@ packages:
   '@josephmcg/eslint-config-next@0.0.41':
     resolution: {integrity: sha512-6CF5utiFP6pF0f/xMy5jrJOoXHd7DcDogMQU33HEowV87Zz7XaoCn5OSKJwN/+QGubCZd8Qk+odsfZ+C7Ja5mA==}
 
-  '@josephmcg/prettier-config@0.0.15':
-    resolution: {integrity: sha512-IrOU8XlrFy2qKdTILDWgeSOfVMxD6HmykpjxQE75scOTqWj/6ueIM+oMjQ20Fynvcwwd4KqHT5qqn2xRLtjM6w==}
+  '@josephmcg/prettier-config@1.0.0':
+    resolution: {integrity: sha512-qgxB9VkU2VElooiIyFTC0W0qEXHC3OpwtlywT9aK5TIjHqvTYsBRqMF66hbPnS+mPAl16QiQ4Q10dVf/QbzmbA==}
 
   '@josephmcg/tsconfig@0.0.9':
     resolution: {integrity: sha512-QkWrZPtDn1SYMH40QtUNSjtdIJBrpInEGDbUChMksiy3eIA03ELh/A1hRDBVkMarKDB/xHo7C3iE/62fCVnRkg==}
@@ -2280,7 +2280,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@josephmcg/prettier-config@0.0.15':
+  '@josephmcg/prettier-config@1.0.0':
     dependencies:
       prettier: 3.3.2
       prettier-plugin-tailwindcss: 0.6.5(prettier@3.3.2)
