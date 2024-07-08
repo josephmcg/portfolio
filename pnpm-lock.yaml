@@ -22,8 +22,8 @@ importers:
         specifier: ^2.1.4
         version: 2.1.4(react@18.3.1)
       '@josephmcg/eslint-config-next':
-        specifier: ^0.0.41
-        version: 0.0.41(typescript@5.5.3)
+        specifier: ^1.0.0
+        version: 1.0.0(typescript@5.5.3)
       '@josephmcg/prettier-config':
         specifier: ^0.0.15
         version: 0.0.15
@@ -136,8 +136,8 @@ packages:
     resolution: {integrity: sha512-O8jcjabXaleOG9DQ0+ARXWZBTfnP4WNAqzuiJK7ll44AmxGKv/J2M4TPjxjY3znBCfvBXFzucm1twdyFybFqEA==}
     engines: {node: '>=12'}
 
-  '@josephmcg/eslint-config-next@0.0.41':
-    resolution: {integrity: sha512-6CF5utiFP6pF0f/xMy5jrJOoXHd7DcDogMQU33HEowV87Zz7XaoCn5OSKJwN/+QGubCZd8Qk+odsfZ+C7Ja5mA==}
+  '@josephmcg/eslint-config-next@1.0.0':
+    resolution: {integrity: sha512-cNb8zDR7SHs3o8ffLzf5ANvaNIuFbao/j1M6cNRcNC3w0xuF/LUm4ValCwf9By3Pv+zxlpFAtZTcZ1JAfzEifg==}
 
   '@josephmcg/prettier-config@0.0.15':
     resolution: {integrity: sha512-IrOU8XlrFy2qKdTILDWgeSOfVMxD6HmykpjxQE75scOTqWj/6ueIM+oMjQ20Fynvcwwd4KqHT5qqn2xRLtjM6w==}
@@ -846,8 +846,8 @@ packages:
     peerDependencies:
       eslint: ^3 || ^4 || ^5 || ^6 || ^7 || ^8
 
-  eslint-plugin-simple-import-sort@12.1.0:
-    resolution: {integrity: sha512-Y2fqAfC11TcG/WP3TrI1Gi3p3nc8XJyEOJYHyEPEGI/UAgNx6akxxlX74p7SbAQdLcgASKhj8M0GKvH3vq/+ig==}
+  eslint-plugin-simple-import-sort@12.1.1:
+    resolution: {integrity: sha512-6nuzu4xwQtE3332Uz0to+TxDQYRLTKRESSc2hefVT48Zc8JthmN23Gx9lnYhu0FtkRSL1oxny3kJ2aveVhmOVA==}
     peerDependencies:
       eslint: '>=5.0.0'
 
@@ -2265,14 +2265,14 @@ snapshots:
       wrap-ansi: 8.1.0
       wrap-ansi-cjs: wrap-ansi@7.0.0
 
-  '@josephmcg/eslint-config-next@0.0.41(typescript@5.5.3)':
+  '@josephmcg/eslint-config-next@1.0.0(typescript@5.5.3)':
     dependencies:
       '@typescript-eslint/eslint-plugin': 7.15.0(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0)(typescript@5.5.3)
       '@typescript-eslint/parser': 7.15.0(eslint@8.57.0)(typescript@5.5.3)
       eslint: 8.57.0
       eslint-config-next: 14.2.4(eslint@8.57.0)(typescript@5.5.3)
       eslint-config-prettier: 9.1.0(eslint@8.57.0)
-      eslint-plugin-simple-import-sort: 12.1.0(eslint@8.57.0)
+      eslint-plugin-simple-import-sort: 12.1.1(eslint@8.57.0)
       eslint-plugin-unicorn: 54.0.0(eslint@8.57.0)
       eslint-plugin-unused-imports: 3.2.0(@typescript-eslint/eslint-plugin@7.15.0(@typescript-eslint/parser@7.15.0(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0)(typescript@5.5.3))(eslint@8.57.0)
     transitivePeerDependencies:
@@ -3158,7 +3158,7 @@ snapshots:
       semver: 6.3.1
       string.prototype.matchall: 4.0.11
 
-  eslint-plugin-simple-import-sort@12.1.0(eslint@8.57.0):
+  eslint-plugin-simple-import-sort@12.1.1(eslint@8.57.0):
     dependencies:
       eslint: 8.57.0
 
