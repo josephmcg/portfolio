@@ -21,7 +21,7 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "@heroicons/react": "^2.1.4",
+    "@heroicons/react": "^2.1.5",
     "@josephmcg/eslint-config-next": "^1.0.0",
     "@josephmcg/prettier-config": "^1.0.0",
     "@josephmcg/tsconfig": "^1.0.0",
