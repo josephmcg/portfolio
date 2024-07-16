@@ -22,8 +22,8 @@
   },
   "devDependencies": {
     "@heroicons/react": "^2.1.5",
-    "@josephmcg/eslint-config-next": "^1.0.0",
-    "@josephmcg/prettier-config": "^1.0.0",
+    "@josephmcg/eslint-config-next": "^1.0.1",
+    "@josephmcg/prettier-config": "^1.0.1",
     "@josephmcg/tsconfig": "^1.0.0",
     "@next/bundle-analyzer": "^14.2.5",
     "@total-typescript/ts-reset": "^0.5.1",
