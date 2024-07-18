@@ -2,7 +2,10 @@
 
 import { usePathname } from 'next/navigation'
 
-import { HeaderNavItem } from '~/components/Header/HeaderNavItem'
+import {
+  HeaderNavItem,
+  type HeaderNavItemProps,
+} from '~/components/Header/HeaderNavItem'
 import { routes } from '~/constants'
 
 const navItems = [
@@ -10,7 +13,7 @@ const navItems = [
   { label: 'Work', href: routes.work },
   { label: 'Uses', href: routes.uses },
   { label: 'GitHub', href: 'https://github.com/josephmcg' },
-]
+] as const satisfies Omit<HeaderNavItemProps, 'isActive'>[]
 
 export const HeaderNav: React.FC = () => {
   const pathname = usePathname()

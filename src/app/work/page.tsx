@@ -47,12 +47,50 @@ const lines: Line[] = [
     indent: 1,
   },
   {
-    value: 'project management',
+    value: 'project ownership and management',
     type: 'string',
     indent: 1,
   },
   {
-    value: 'figuring things out',
+    value: 'googling',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: ']',
+    type: 'bracket',
+  },
+  {
+    type: 'empty',
+  },
+  {
+    declaration: 'let',
+    name: 'passions',
+    value: '[',
+    type: 'bracket',
+  },
+  {
+    value: 'a11y',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'type safety',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'code readability',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'web design systems',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'web performance optimization',
     type: 'string',
     indent: 1,
   },
@@ -110,15 +148,13 @@ const lines: Line[] = [
   },
   {
     type: 'comment',
-    comment: 'frameworks',
+    comment: 'tools',
     indent: 1,
   },
   {
     value: 'React',
     type: 'string',
     indent: 1,
-    comment: 'technically a library, but let’s be real',
-    isCommentHiddenOnSmallScreens: true,
   },
   {
     value: 'Vue',
@@ -141,12 +177,25 @@ const lines: Line[] = [
     indent: 1,
   },
   {
-    type: 'comment',
-    comment: 'miscellaneous',
+    value: 'Node.js',
+    type: 'string',
     indent: 1,
   },
   {
-    value: 'Chrome extension development',
+    value: 'PostgreSQL',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    type: 'empty',
+  },
+  {
+    type: 'comment',
+    comment: 'experience',
+    indent: 1,
+  },
+  {
+    value: 'cross functional team leadership',
     type: 'string',
     indent: 1,
   },
@@ -156,32 +205,26 @@ const lines: Line[] = [
     indent: 1,
   },
   {
-    value: 'reusable project config packages',
-    type: 'string',
-    indent: 1,
-    comment: (
-      <a
-        className="underline hover:text-link"
-        href="https://github.com/josephmcg/config"
-        target="_blank"
-      >
-        https://github.com/josephmcg/config
-      </a>
-    ),
-  },
-  {
-    value: 'hybrid app development',
+    value: 'Chrome extension development',
     type: 'string',
     indent: 1,
   },
   {
-    value: 'cross functional team leadership',
+    value: 'shared project config packages',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'micro frontends',
     type: 'string',
     indent: 1,
   },
   {
     value: ']',
     type: 'bracket',
+  },
+  {
+    type: 'empty',
   },
 ]
 

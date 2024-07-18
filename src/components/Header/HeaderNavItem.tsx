@@ -3,15 +3,19 @@ import Link from 'next/link'
 
 import { routes } from '~/constants'
 
-type Props = {
+export type HeaderNavItemProps = {
   label: string
   href: string
   isActive: boolean
 }
 
-export const HeaderNavItem: React.FC<Props> = ({ label, href, isActive }) => {
+export const HeaderNavItem: React.FC<HeaderNavItemProps> = ({
+  label,
+  href,
+  isActive,
+}) => {
   const classes = clsx(
-    'px-3 py-1 hover:text-gray-200',
+    'flex gap-2 px-3 py-1 hover:text-gray-200',
     isActive ? 'text-gray-200' : 'text-gray-400',
   )
 

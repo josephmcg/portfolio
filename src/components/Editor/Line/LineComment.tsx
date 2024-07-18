@@ -11,9 +11,7 @@ export const EditorLineComment: React.FC<Props> = ({ line }) => {
     return
   }
 
-  const classes = clsx('italic text-dark [text-underline-position:under]', {
-    'hidden md:inline-flex': line.isCommentHiddenOnSmallScreens,
-  })
+  const classes = clsx('italic text-dark [text-underline-position:under]')
 
   // if only a comment, don't apply any leading space
   if (line.type === 'comment') {

@@ -26,15 +26,26 @@ const lines: Line[] = [
     value: 'music',
     type: 'string',
     indent: 1,
-    comment: 'David Bowie, The Smiths, J Dilla, to name a few',
-    isCommentHiddenOnSmallScreens: true,
+    comment: (
+      <a
+        className="underline hover:text-link"
+        href="https://music.apple.com/profile/josephmcg01"
+        target="_blank"
+      >
+        Apple Music
+      </a>
+    ),
   },
   {
-    value: 'vintage clothes',
+    value: 'tea',
     type: 'string',
     indent: 1,
-    comment: "90s Nike, Levi's, LL Bean",
-    isCommentHiddenOnSmallScreens: true,
+  },
+  {
+    value: 'vintage',
+    type: 'string',
+    indent: 1,
+    comment: "Nike, Levi's, Stüssy",
   },
   {
     value: 'sentō',
@@ -43,12 +54,7 @@ const lines: Line[] = [
     comment: 'Japanese public bath',
   },
   {
-    value: 'baking',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'tea',
+    value: 'gym',
     type: 'string',
     indent: 1,
   },
@@ -56,13 +62,7 @@ const lines: Line[] = [
     value: 'games',
     type: 'string',
     indent: 1,
-    comment: 'Smash bros, SNES, indie games',
-    isCommentHiddenOnSmallScreens: true,
-  },
-  {
-    value: 'gym',
-    type: 'string',
-    indent: 1,
+    comment: 'Smash bros, SNES, indie',
   },
   {
     value: ']',
