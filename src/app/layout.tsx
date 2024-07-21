@@ -1,7 +1,7 @@
 import './globals.css'
 
 import clsx from 'clsx'
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 
 import { Footer } from '~/components/Footer/Footer'
 import { Header } from '~/components/Header/Header'
@@ -21,9 +21,6 @@ export default function RootLayout({
 }>): React.JSX.Element {
   return (
     <html lang="en">
-      <head>
-        <meta name="theme-color" content="#21252b" />
-      </head>
       <body
         className={clsx(
           'flex min-h-dvh items-center justify-center md:min-h-[90vh] md:p-6',
@@ -37,4 +34,8 @@ export default function RootLayout({
       </body>
     </html>
   )
+}
+
+export const viewport: Viewport = {
+  themeColor: '#21252b',
 }
