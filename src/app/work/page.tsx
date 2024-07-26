@@ -47,7 +47,12 @@ const lines: Line[] = [
     indent: 1,
   },
   {
-    value: 'project ownership and management',
+    value: 'project ownership',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'stakeholder management',
     type: 'string',
     indent: 1,
   },
@@ -70,22 +75,12 @@ const lines: Line[] = [
     type: 'bracket',
   },
   {
-    value: 'a11y',
-    type: 'string',
-    indent: 1,
-  },
-  {
     value: 'type safety',
     type: 'string',
     indent: 1,
   },
   {
     value: 'code readability',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'web design systems',
     type: 'string',
     indent: 1,
   },
@@ -123,6 +118,11 @@ const lines: Line[] = [
     indent: 1,
   },
   {
+    value: 'SQL',
+    type: 'string',
+    indent: 1,
+  },
+  {
     value: 'PHP',
     type: 'string',
     indent: 1,
@@ -142,14 +142,9 @@ const lines: Line[] = [
   },
   {
     declaration: 'let',
-    name: 'experience',
+    name: 'tools',
     value: '[',
     type: 'bracket',
-  },
-  {
-    type: 'comment',
-    comment: 'tools',
-    indent: 1,
   },
   {
     value: 'React',
@@ -187,11 +182,26 @@ const lines: Line[] = [
     indent: 1,
   },
   {
+    value: ']',
+    type: 'bracket',
+  },
+  {
     type: 'empty',
   },
   {
-    type: 'comment',
-    comment: 'experience',
+    declaration: 'let',
+    name: 'experience',
+    value: '[',
+    type: 'bracket',
+  },
+  {
+    value: 'marketing website development',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'web application development',
+    type: 'string',
     indent: 1,
   },
   {
@@ -210,7 +220,17 @@ const lines: Line[] = [
     indent: 1,
   },
   {
-    value: 'shared project config packages',
+    value: 'automated package publishing',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'web design systems',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'a11y and i18n',
     type: 'string',
     indent: 1,
   },

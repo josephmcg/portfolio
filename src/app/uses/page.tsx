@@ -103,8 +103,7 @@ const categories: Category[] = [
       {
         title: 'pnpm',
         url: 'https://pnpm.io',
-        description:
-          'It saves me so much time and disk space, the future is now!',
+        description: 'Saves me so much time and disk space, the future is now!',
       },
     ],
   },
