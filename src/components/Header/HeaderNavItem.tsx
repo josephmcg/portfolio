@@ -1,3 +1,4 @@
+import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import clsx from 'clsx'
 import Link from 'next/link'
 
@@ -15,7 +16,7 @@ export const HeaderNavItem: React.FC<HeaderNavItemProps> = ({
   isActive,
 }) => {
   const classes = clsx(
-    'flex gap-2 px-3 py-1 hover:text-gray-200',
+    'flex gap-1 px-3 py-1 hover:text-gray-200',
     isActive ? 'text-gray-200' : 'text-gray-400',
   )
 
@@ -33,6 +34,7 @@ export const HeaderNavItem: React.FC<HeaderNavItemProps> = ({
       className={classes}
     >
       {label}
+      <ArrowTopRightOnSquareIcon className="h-3 w-3" />
     </a>
   )
 }

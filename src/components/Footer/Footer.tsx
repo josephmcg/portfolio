@@ -37,13 +37,10 @@ export const Footer: React.FC = () => {
       // hilarious false positive
       // eslint-disable-next-line unicorn/text-encoding-identifier-case
       element: 'UTF-8',
-      className: clsx('ml-auto'),
+      className: clsx('md:ml-auto'),
     },
     {
       element: 'LF',
-    },
-    {
-      element: '{}',
     },
     {
       element: <FooterLanguage />,
@@ -51,7 +48,7 @@ export const Footer: React.FC = () => {
   ]
 
   return (
-    <footer className="flex bg-secondary font-mono text-sm text-light shadow">
+    <footer className="flex justify-between bg-secondary font-mono text-sm text-light shadow">
       {items.map((item, index) => (
         <div
           key={index}
