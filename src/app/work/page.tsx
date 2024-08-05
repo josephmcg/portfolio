@@ -47,12 +47,12 @@ const lines: Line[] = [
     indent: 1,
   },
   {
-    value: 'project ownership',
+    value: 'problem solving',
     type: 'string',
     indent: 1,
   },
   {
-    value: 'stakeholder management',
+    value: 'stakeholder reporting',
     type: 'string',
     indent: 1,
   },
@@ -76,11 +76,6 @@ const lines: Line[] = [
   },
   {
     value: 'type safety',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'code readability',
     type: 'string',
     indent: 1,
   },
