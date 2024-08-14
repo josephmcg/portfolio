@@ -7,9 +7,10 @@ const withBundleAnalyzer = bundleAnalyzer({
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
+  poweredByHeader: false,
+  productionBrowserSourceMaps: true,
   reactStrictMode: true,
   swcMinify: true,
-  poweredByHeader: false,
 }
 
 export default withBundleAnalyzer(nextConfig)
