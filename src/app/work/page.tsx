@@ -5,6 +5,8 @@ import type { Line } from '~/types'
 
 export const metadata: Metadata = {
   title: 'Work',
+  description:
+    'Joe McGrath, Senior Software Engineer at Migaku, specializes in programming, problem solving, and web performance optimization. With seasoned skills in TypeScript, React, and Vue, Joe leads cross-functional teams to build marketing websites and web applications, while focusing on accessibility and internationalization.',
 }
 
 const lines: Line[] = [

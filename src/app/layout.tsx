@@ -9,9 +9,10 @@ import { Header } from '~/components/Header/Header'
 export const metadata: Metadata = {
   title: {
     template: `Joe McGrath - %s`,
-    default: `Joe McGrath - Software Engineer`,
+    default: `Joe McGrath - Software Engineer in Tokyo`,
   },
-  description: 'Joe McGrath is a software engineer based in Tokyo, Japan.',
+  description:
+    'Explore the personal and professional life of Joe McGrath, a Tokyo-based software engineer.',
 }
 
 export default function RootLayout({
