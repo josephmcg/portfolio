@@ -26,15 +26,6 @@ const lines: Line[] = [
     value: 'music',
     type: 'string',
     indent: 1,
-    comment: (
-      <a
-        className="underline hover:text-link"
-        href="https://music.apple.com/profile/josephmcg01"
-        target="_blank"
-      >
-        Apple Music
-      </a>
-    ),
   },
   {
     value: 'tea',
@@ -63,6 +54,11 @@ const lines: Line[] = [
     type: 'string',
     indent: 1,
     comment: 'Smash bros, SNES, indie',
+  },
+  {
+    value: 'yoga',
+    type: 'string',
+    indent: 1,
   },
   {
     value: ']',

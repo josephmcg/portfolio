@@ -19,7 +19,7 @@ type Category = {
 
 const categories: Category[] = [
   {
-    heading: 'Computer / Peripherals',
+    heading: 'Computer & Peripherals',
     items: [
       {
         title: '2021 16" MacBook Pro, M1 Pro, 16GB RAM, 512GB SSD',
@@ -36,7 +36,6 @@ const categories: Category[] = [
       {
         title: 'Ergotron Monitor Arm',
         url: 'https://www.amazon.co.jp/-/en/gp/product/B07Q8TJ2KL',
-        description: 'I use this w/ the Dell.',
       },
       {
         title: 'Keychron K8 (Gateron brown)',
@@ -50,17 +49,11 @@ const categories: Category[] = [
         description:
           'Great for general use and gaming, the thumb buttons are handy.',
       },
-    ],
-  },
-
-  {
-    heading: 'Headphones',
-    items: [
       {
         title: 'Bose QuietComfort 35 II',
         url: 'https://global.bose.com/content/consumer_electronics/b2c_catalog/worldwide/websites/en_ae/product/qc35_ii.html',
         description:
-          'Great noise cancelling, comfortable for long periods of time.',
+          'Fantastic noise cancelling, comfortable for long periods of time.',
       },
       {
         title: 'Sony WF-1000XM4',

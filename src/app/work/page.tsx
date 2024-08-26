@@ -54,13 +54,18 @@ const lines: Line[] = [
     indent: 1,
   },
   {
-    value: 'stakeholder reporting',
+    value: 'leadership',
     type: 'string',
     indent: 1,
   },
   {
     value: 'googling',
     type: 'string',
+    indent: 1,
+  },
+  {
+    type: 'comment',
+    comment: '...and more!',
     indent: 1,
   },
   {
@@ -72,17 +77,57 @@ const lines: Line[] = [
   },
   {
     declaration: 'let',
-    name: 'passions',
+    name: 'experience',
     value: '[',
     type: 'bracket',
   },
   {
-    value: 'type safety',
+    value: 'marketing websites',
     type: 'string',
     indent: 1,
   },
   {
-    value: 'web performance optimization',
+    value: 'web apps',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'cross-functional leadership',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'internal component libraries',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'Chrome extensions',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'automated package publishing',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'design systems',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'accessibility (a11y)',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'internationalization (i18n)',
+    type: 'string',
+    indent: 1,
+  },
+  {
+    value: 'micro-frontends',
     type: 'string',
     indent: 1,
   },
@@ -182,64 +227,7 @@ const lines: Line[] = [
     value: ']',
     type: 'bracket',
   },
-  {
-    type: 'empty',
-  },
-  {
-    declaration: 'let',
-    name: 'experience',
-    value: '[',
-    type: 'bracket',
-  },
-  {
-    value: 'marketing website development',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'web application development',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'cross functional team leadership',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'in-house component libraries',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'Chrome extension development',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'automated package publishing',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'web design systems',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'a11y and i18n',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: 'micro frontends',
-    type: 'string',
-    indent: 1,
-  },
-  {
-    value: ']',
-    type: 'bracket',
-  },
+
   {
     type: 'empty',
   },
