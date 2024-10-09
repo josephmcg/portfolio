@@ -5,11 +5,14 @@
   "license": "UNLICENSED",
   "packageManager": "pnpm@9.4.0",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "\n============= Setup ==============": "",
     "prepare": "husky",
+    "preinstall": "npx only-allow pnpm",
+    "\n============== Dev ===============": "",
     "dev": "next dev",
     "build": "next build",
     "start": "serve out",
+    "\n============== Lint ==============": "",
     "lint": "pnpm run '/^lint:.*/'",
     "lint:next": "next lint",
     "lint:tsc": "tsc --noEmit",
@@ -21,6 +24,8 @@
     "react-dom": "18.3.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.5.0",
+    "@commitlint/config-conventional": "^19.5.0",
     "@heroicons/react": "^2.1.5",
     "@josephmcg/eslint-config-next": "^1.0.9",
     "@josephmcg/prettier-config": "^1.0.3",
