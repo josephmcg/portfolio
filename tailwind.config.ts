@@ -34,6 +34,16 @@ export default {
         'hue6-secondary': '#e6c07b',
         link: '#4e94ce',
       },
+      animation: {
+        float: 'float 10s ease-in-out infinite',
+      },
+      keyframes: {
+        float: {
+          '0%': { transform: 'translateY(0) scale(1)' },
+          '50%': { transform: 'translateY(-20px) scale(1.1)' },
+          '100%': { transform: 'translateY(0) scale(1)' },
+        },
+      },
     },
   },
 } satisfies Config

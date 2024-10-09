@@ -5,6 +5,7 @@ import type { Metadata, Viewport } from 'next'
 
 import { Footer } from '~/components/Footer/Footer'
 import { Header } from '~/components/Header/Header'
+import { Polygons } from '~/components/Polygons'
 
 export const metadata: Metadata = {
   title: {
@@ -27,7 +28,8 @@ export default function RootLayout({
           'flex min-h-dvh items-center justify-center md:min-h-[90vh] md:p-6',
         )}
       >
-        <div className="flex h-dvh w-full max-w-6xl flex-col overflow-hidden bg-primary shadow-2xl md:h-[46rem] md:max-h-[90vh] md:rounded-lg">
+        <Polygons />
+        <div className="relative flex h-dvh w-full max-w-6xl flex-col overflow-hidden bg-primary shadow-2xl md:h-[46rem] md:max-h-[90vh] md:rounded-lg">
           <Header />
           <main className="flex-1 overflow-auto">{children}</main>
           <Footer />
