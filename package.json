@@ -16,7 +16,9 @@
     "lint": "pnpm run '/^lint:.*/'",
     "lint:next": "next lint",
     "lint:tsc": "tsc --noEmit",
-    "analyze": "cross-env ANALYZE=true next build"
+    "\n============= Script =============": "",
+    "analyze": "cross-env ANALYZE=true next build",
+    "lighthouse": "unlighthouse --site https://josephmcg.dev --no-cache"
   },
   "dependencies": {
     "next": "14.2.15",
@@ -42,6 +44,7 @@
     "lint-staged": "^15.2.10",
     "postcss": "8.4.47",
     "tailwindcss": "3.4.13",
-    "typescript": "5.6.3"
+    "typescript": "5.6.3",
+    "unlighthouse": "^0.13.5"
   }
 }
