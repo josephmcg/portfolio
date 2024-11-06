@@ -8,12 +8,14 @@ export const FooterFile: React.FC = () => {
   const pathname = usePathname()
 
   switch (pathname) {
-    case INTERNAL_ROUTE.INDEX:
+    case INTERNAL_ROUTE.INDEX: {
+      return '/joe.ts'
+    }
     case INTERNAL_ROUTE.WORK: {
-      return `/${pathname}.ts`
+      return `${pathname}.ts`
     }
     case INTERNAL_ROUTE.USES: {
-      return `/${pathname}.md`
+      return `${pathname}.md`
     }
   }
 }
