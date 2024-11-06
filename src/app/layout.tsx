@@ -14,6 +14,7 @@ export const metadata: Metadata = {
   },
   description:
     'Explore the personal and professional life of Joe McGrath, a Tokyo-based software engineer.',
+  metadataBase: new URL('https://josephmcg.dev'),
 }
 
 export default function RootLayout({

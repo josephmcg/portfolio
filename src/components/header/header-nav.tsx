@@ -6,12 +6,12 @@ import {
   HeaderNavItem,
   type HeaderNavItemProps,
 } from '~/components/header/header-nav-item'
-import { routes } from '~/constants'
+import { INTERNAL_ROUTE } from '~/navigation'
 
 const navItems = [
-  { label: 'Joe', href: routes.index },
-  { label: 'Work', href: routes.work },
-  { label: 'Uses', href: routes.uses },
+  { label: 'Joe', href: INTERNAL_ROUTE.INDEX },
+  { label: 'Work', href: INTERNAL_ROUTE.WORK },
+  { label: 'Uses', href: INTERNAL_ROUTE.USES },
   { label: 'GitHub', href: 'https://github.com/josephmcg' },
 ] as const satisfies Omit<HeaderNavItemProps, 'isActive'>[]
 

@@ -2,7 +2,7 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import clsx from 'clsx'
 import Link from 'next/link'
 
-import { routes } from '~/constants'
+import { INTERNAL_ROUTE } from '~/navigation'
 
 export interface HeaderNavItemProps {
   label: string
@@ -20,7 +20,7 @@ export const HeaderNavItem: React.FC<HeaderNavItemProps> = ({
     isActive ? 'text-gray-200' : 'text-gray-400',
   )
 
-  const isInternal = Object.values(routes).includes(href)
+  const isInternal = Object.values(INTERNAL_ROUTE).includes(href)
 
   return isInternal ? (
     <Link href={href} className={classes}>
