@@ -10,7 +10,6 @@ const nextConfig = {
   poweredByHeader: false,
   productionBrowserSourceMaps: true,
   reactStrictMode: true,
-  swcMinify: true,
 }
 
 export default withBundleAnalyzer(nextConfig)

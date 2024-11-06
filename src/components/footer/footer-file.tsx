@@ -2,20 +2,20 @@
 import { usePathname } from 'next/navigation'
 import React from 'react'
 
-import { routes } from '~/constants'
+import { INTERNAL_ROUTE } from '~/navigation'
 
 export const FooterFile: React.FC = () => {
   const pathname = usePathname()
 
   switch (pathname) {
-    case routes.index: {
+    case INTERNAL_ROUTE.INDEX: {
       return '/joe.ts'
     }
-    case routes.work: {
-      return '/work.ts'
+    case INTERNAL_ROUTE.WORK: {
+      return `${pathname}.ts`
     }
-    case routes.uses: {
-      return '/uses.md'
+    case INTERNAL_ROUTE.USES: {
+      return `${pathname}.md`
     }
   }
 }

@@ -1,5 +1,13 @@
+import type { Metadata } from 'next'
+
 import { Editor } from '~/components/editor/editor'
 import type { Line } from '~/types'
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: '/',
+  },
+}
 
 const lines: Line[] = [
   {

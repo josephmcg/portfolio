@@ -2,19 +2,19 @@
 import { usePathname } from 'next/navigation'
 import React from 'react'
 
-import { routes } from '~/constants'
+import { INTERNAL_ROUTE } from '~/navigation'
 
 export const FooterLanguage: React.FC = () => {
   const pathname = usePathname()
 
   switch (pathname) {
-    case routes.index:
-    case routes.work: {
+    case INTERNAL_ROUTE.INDEX:
+    case INTERNAL_ROUTE.WORK: {
       {
         return 'TypeScript'
       }
     }
-    case routes.uses: {
+    case INTERNAL_ROUTE.USES: {
       return 'Markdown'
     }
   }
