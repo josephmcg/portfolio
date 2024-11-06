@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import React from 'react'
 
-import { FooterFile } from '~/components/Footer/FooterFile'
-import { FooterLanguage } from '~/components/Footer/FooterLanguage'
+import { FooterFile } from '~/components/footer/footer-file'
+import { FooterLanguage } from '~/components/footer/footer-language'
 
 const TerminalBranch: React.FC = () => {
   return (
@@ -16,7 +16,7 @@ const TerminalBranch: React.FC = () => {
   )
 }
 
-type Item = {
+interface Item {
   className?: string
   element: React.ReactNode
 }

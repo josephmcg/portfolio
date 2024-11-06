@@ -2,7 +2,7 @@ import clsx from 'clsx'
 
 import type { LineComment, LineDeclaration, LineStandard } from '~/types'
 
-type Props = {
+interface Props {
   line: LineStandard | LineDeclaration | LineComment
 }
 

@@ -6,13 +6,13 @@ export const metadata: Metadata = {
     "Discover Joe McGrath's tech setup, from his MacBook Pro and ergonomic desk accessories to his favorite tools for programming and productivity, including VS Code, kitty, Powerlevel10k, and pnpm. Explore the gear that powers his work and daily routines.",
 }
 
-type Item = {
+interface Item {
   title: string
   url: string
   description?: string
 }
 
-type Category = {
+interface Category {
   heading: string
   items: Item[]
 }

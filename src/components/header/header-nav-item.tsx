@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 import { routes } from '~/constants'
 
-export type HeaderNavItemProps = {
+export interface HeaderNavItemProps {
   label: string
   href: string
   isActive: boolean

@@ -1,4 +1,4 @@
-import { Editor } from '~/components/Editor/Editor'
+import { Editor } from '~/components/editor/editor'
 import type { Line } from '~/types'
 
 const lines: Line[] = [

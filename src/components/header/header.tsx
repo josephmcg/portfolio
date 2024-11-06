@@ -1,5 +1,5 @@
-import { HeaderControls } from '~/components/Header/HeaderControls'
-import { HeaderNav } from '~/components/Header/HeaderNav'
+import { HeaderControls } from '~/components/header/header-controls'
+import { HeaderNav } from '~/components/header/header-nav'
 
 export const Header: React.FC = () => {
   return (

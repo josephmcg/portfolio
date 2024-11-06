@@ -1,22 +1,22 @@
-export type LineStandard = {
+export interface LineStandard {
   value: string
   type: 'string' | 'number' | 'boolean' | 'bracket'
   indent?: number
   comment?: React.ReactNode
 }
 
-export type LineDeclaration = LineStandard & {
+export interface LineDeclaration extends LineStandard {
   declaration: 'const' | 'let' | 'var'
   name: string
 }
 
-export type LineComment = {
+export interface LineComment {
   type: 'comment'
   indent?: number
   comment: React.ReactNode
 }
 
-type LineEmpty = {
+interface LineEmpty {
   type: 'empty'
 }
 

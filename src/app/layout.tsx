@@ -3,9 +3,9 @@ import './globals.css'
 import clsx from 'clsx'
 import type { Metadata, Viewport } from 'next'
 
-import { Footer } from '~/components/Footer/Footer'
-import { Header } from '~/components/Header/Header'
-import { Polygons } from '~/components/Polygons'
+import { Footer } from '~/components/footer/footer'
+import { Header } from '~/components/header/header'
+import { Polygons } from '~/components/polygons'
 
 export const metadata: Metadata = {
   title: {

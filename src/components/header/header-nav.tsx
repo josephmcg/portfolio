@@ -5,7 +5,7 @@ import { usePathname } from 'next/navigation'
 import {
   HeaderNavItem,
   type HeaderNavItemProps,
-} from '~/components/Header/HeaderNavItem'
+} from '~/components/header/header-nav-item'
 import { routes } from '~/constants'
 
 const navItems = [

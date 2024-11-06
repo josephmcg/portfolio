@@ -1,9 +1,9 @@
-import { EditorLineComment } from '~/components/Editor/Line/LineComment'
-import { EditorLineDeclaration } from '~/components/Editor/Line/LineDeclaration'
-import { EditorLineString } from '~/components/Editor/Line/LineString'
+import { EditorLineComment } from '~/components/editor/line/line-comment'
+import { EditorLineDeclaration } from '~/components/editor/line/line-declaration'
+import { EditorLineString } from '~/components/editor/line/line-string'
 import type { Line, LineStandard } from '~/types'
 
-type LineContainerProps = {
+interface LineContainerProps {
   lineNumber: number
 }
 
@@ -34,7 +34,7 @@ const LineIndent: React.FC<{ indent: LineStandard['indent'] }> = ({
   return <span>{' '.repeat(indent * 2)}</span>
 }
 
-type EditorLineProps = {
+interface EditorLineProps {
   line: Line
   lineNumber: number
 }
