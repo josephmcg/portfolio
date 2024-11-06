@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useCallback, useEffect, useState } from 'react'
 
 interface PolygonProps {
   size: number
@@ -71,24 +71,27 @@ export const Polygons: React.FC = () => {
     })
   }
 
-  const handleMouseMove = (event: MouseEvent): void => {
-    if (isNoActivePolygon) {
-      return
-    }
+  const handleMouseMove = useCallback(
+    (event: MouseEvent): void => {
+      if (isNoActivePolygon) {
+        return
+      }
 
-    const xPos = event.clientX - offset.x
-    const yPos = event.clientY - offset.y
+      const xPos = event.clientX - offset.x
+      const yPos = event.clientY - offset.y
 
-    setPolygons((prevPolygons) =>
-      prevPolygons.map((polygon, i) =>
-        i === activePolygon ? { ...polygon, xPos, yPos } : polygon,
-      ),
-    )
-  }
+      setPolygons((prevPolygons) =>
+        prevPolygons.map((polygon, i) =>
+          i === activePolygon ? { ...polygon, xPos, yPos } : polygon,
+        ),
+      )
+    },
+    [activePolygon, offset, isNoActivePolygon],
+  )
 
-  const handleMouseUp = (): void => {
+  const handleMouseUp = useCallback((): void => {
     setActivePolygon(undefined)
-  }
+  }, [])
 
   useEffect(() => {
     if (isNoActivePolygon) {
@@ -103,7 +106,7 @@ export const Polygons: React.FC = () => {
       document.removeEventListener('mousemove', handleMouseMove)
       document.removeEventListener('mouseup', handleMouseUp)
     }
-  }, [activePolygon])
+  }, [activePolygon, handleMouseMove, handleMouseUp, isNoActivePolygon])
 
   return (
     <div className="absolute inset-0 overflow-hidden">
