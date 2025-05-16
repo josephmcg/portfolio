@@ -7,7 +7,7 @@ import type { Line } from '~/types'
 export const metadata: Metadata = {
   title: 'Work',
   description:
-    'Joe McGrath, Senior Software Engineer at Migaku, specializes in programming, problem solving, and web performance optimization. With seasoned skills in TypeScript, React, and Vue, Joe leads cross-functional teams to build marketing websites and web applications, while focusing on accessibility and internationalization.',
+    'Joe McGrath, Senior Software Engineer at Zyphe, specializes in programming, problem solving, and web performance optimization. With seasoned skills in TypeScript, React, and Vue, Joe leads cross-functional teams to build marketing websites and web applications, while focusing on accessibility and internationalization.',
   alternates: {
     canonical: INTERNAL_ROUTE.WORK,
   },
@@ -19,17 +19,17 @@ const lines: Line[] = [
     comment: (
       <a
         className="underline hover:text-link"
-        href="https://migaku.com"
+        href="https://zyphe.com"
         target="_blank"
       >
-        https://migaku.com
+        https://zyphe.com
       </a>
     ),
   },
   {
     declaration: 'let',
     name: 'employer',
-    value: 'Migaku',
+    value: 'Zyphe',
     type: 'string',
   },
   {
