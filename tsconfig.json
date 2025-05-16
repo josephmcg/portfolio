@@ -10,7 +10,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "reset.d.ts"
+    "reset.d.ts",
+    "scripts/*.*ts"
   ],
   "exclude": ["node_modules"]
 }
