@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "license": "MIT",
+  "type": "module",
   "packageManager": "pnpm@9.4.0",
   "scripts": {
     "\n============= Setup ==============": "",
@@ -17,7 +18,7 @@
     "lint:next": "next lint",
     "lint:tsc": "tsc --noEmit",
     "lint:prettier": "prettier --cache --check .",
-    "lint:circular-dependency": "tsx scripts/lint-circular-dependencies.mts",
+    "lint:circular-dependency": "tsx scripts/lint-circular-dependencies.ts",
     "\n============= Script =============": "",
     "analyze": "cross-env \"ANALYZE=true\" next build",
     "lighthouse": "unlighthouse --site https://josephmcg.dev --no-cache"
