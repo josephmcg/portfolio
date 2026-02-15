@@ -2,6 +2,7 @@ import createBundleAnalyzer from '@next/bundle-analyzer'
 import type { NextConfig } from 'next'
 
 const nextConfig = {
+  output: 'export',
   devIndicators: false,
   poweredByHeader: false,
   reactStrictMode: true,
