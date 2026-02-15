@@ -13,7 +13,7 @@ interface PolygonProps {
 const Polygon: React.FC<PolygonProps> = ({ size, xPos, yPos, rotation }) => {
   return (
     <div
-      className="absolute animate-float cursor-grab bg-white bg-opacity-10 active:cursor-grabbing"
+      className="animate-float bg-opacity-10 absolute cursor-grab bg-white active:cursor-grabbing"
       style={{
         width: `${String(size)}px`,
         height: `${String(size)}px`,
@@ -36,7 +36,7 @@ export const Polygons: React.FC = () => {
     const createPolygons = (): void => {
       const newPolygons: PolygonProps[] = []
 
-      for (let i = 0; i < 20; i++) {
+      for (let index = 0; index < 20; index++) {
         const size = Math.random() * 50 + 50 // Random size between 50px and 100px
         const xPos = Math.random() * window.innerWidth
         const yPos = Math.random() * window.innerHeight
@@ -47,7 +47,7 @@ export const Polygons: React.FC = () => {
           xPos,
           yPos,
           rotation,
-          index: i,
+          index: index,
         })
       }
 
@@ -80,9 +80,9 @@ export const Polygons: React.FC = () => {
       const xPos = event.clientX - offset.x
       const yPos = event.clientY - offset.y
 
-      setPolygons((prevPolygons) =>
-        prevPolygons.map((polygon, i) =>
-          i === activePolygon ? { ...polygon, xPos, yPos } : polygon,
+      setPolygons((previousPolygons) =>
+        previousPolygons.map((polygon, index) =>
+          index === activePolygon ? { ...polygon, xPos, yPos } : polygon,
         ),
       )
     },
@@ -111,12 +111,12 @@ export const Polygons: React.FC = () => {
   return (
     <div className="absolute inset-0 overflow-hidden">
       {polygons.map((polygon, index) => (
-        // eslint-disable-next-line jsx-a11y/no-static-element-interactions
-        <div
+        <button
           key={index}
           onMouseDown={(event) => {
             handleMouseDown(index, event)
           }}
+          tabIndex={-1}
         >
           <Polygon
             size={polygon.size}
@@ -125,7 +125,7 @@ export const Polygons: React.FC = () => {
             rotation={polygon.rotation}
             index={polygon.index}
           />
-        </div>
+        </button>
       ))}
     </div>
   )

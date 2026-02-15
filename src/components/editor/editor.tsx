@@ -8,8 +8,8 @@ interface Props {
 export const Editor: React.FC<Props> = ({ lines }) => {
   return (
     <pre className="py-4">
-      {lines.map((line, i) => (
-        <EditorLine key={i} line={line} lineNumber={i + 1} />
+      {lines.map((line, index) => (
+        <EditorLine key={index} line={line} lineNumber={index + 1} />
       ))}
     </pre>
   )

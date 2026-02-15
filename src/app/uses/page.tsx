@@ -138,7 +138,7 @@ export default function Uses(): React.JSX.Element {
     <div className="flex flex-col gap-10 px-8 py-4 pb-8">
       {categories.map((category) => (
         <div key={category.heading} className="flex flex-col gap-4">
-          <h2 className="border-b border-divider pb-2.5 text-xl">
+          <h2 className="border-divider border-b pb-2.5 text-xl">
             {category.heading}
           </h2>
           <ul className="flex list-disc flex-col gap-4 pl-4">
@@ -148,6 +148,7 @@ export default function Uses(): React.JSX.Element {
                   href={item.url}
                   target="_blank"
                   className="underline hover:opacity-80"
+                  rel="noreferrer"
                 >
                   {item.title}
                 </a>

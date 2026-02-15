@@ -30,7 +30,7 @@ export default function RootLayout({
         )}
       >
         <Polygons />
-        <div className="relative flex h-dvh w-full max-w-6xl flex-col overflow-hidden bg-primary shadow-2xl md:h-[46rem] md:max-h-[90vh] md:rounded-lg">
+        <div className="bg-primary relative flex h-dvh w-full max-w-6xl flex-col overflow-hidden shadow-2xl md:h-[46rem] md:max-h-[90vh] md:rounded-lg">
           <Header />
           <main className="flex-1 overflow-auto">{children}</main>
           <Footer />

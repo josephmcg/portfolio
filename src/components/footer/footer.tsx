@@ -7,7 +7,7 @@ import { FooterLanguage } from '~/components/footer/footer-language'
 const TerminalBranch: React.FC = () => {
   return (
     <svg
-      className="w-4 fill-plain"
+      className="fill-plain w-4"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
     >
@@ -48,7 +48,7 @@ export const Footer: React.FC = () => {
   ]
 
   return (
-    <footer className="flex justify-between bg-secondary font-mono text-sm text-light shadow">
+    <footer className="bg-secondary text-light flex justify-between font-mono text-sm shadow">
       {items.map((item, index) => (
         <div
           key={index}

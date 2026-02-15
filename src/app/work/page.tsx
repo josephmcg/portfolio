@@ -18,9 +18,10 @@ const lines: Line[] = [
     type: 'comment',
     comment: (
       <a
-        className="underline hover:text-link"
+        className="hover:text-link underline"
         href="https://zyphe.com"
         target="_blank"
+        rel="noreferrer"
       >
         https://zyphe.com
       </a>
