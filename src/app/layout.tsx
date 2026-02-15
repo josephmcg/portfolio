@@ -3,9 +3,9 @@ import './globals.css'
 import clsx from 'clsx'
 import type { Metadata, Viewport } from 'next'
 
-import { Footer } from '~/components/footer/footer'
-import { Header } from '~/components/header/header'
-import { Polygons } from '~/components/polygons'
+import { Footer } from '@/components/footer/footer'
+import { Header } from '@/components/header/header'
+import { Polygons } from '@/components/polygons'
 
 export const metadata: Metadata = {
   title: {
@@ -30,7 +30,7 @@ export default function RootLayout({
         )}
       >
         <Polygons />
-        <div className="bg-primary relative flex h-dvh w-full max-w-6xl flex-col overflow-hidden shadow-2xl md:h-[46rem] md:max-h-[90vh] md:rounded-lg">
+        <div className="relative flex h-dvh w-full max-w-6xl flex-col overflow-hidden bg-primary shadow-2xl md:h-[46rem] md:max-h-[90vh] md:rounded-lg">
           <Header />
           <main className="flex-1 overflow-auto">{children}</main>
           <Footer />

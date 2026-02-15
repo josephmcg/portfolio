@@ -1,6 +1,6 @@
 import madge from 'madge'
 
-const res = await madge('./src', {
+const result = await madge('./src', {
   fileExtensions: ['ts', 'tsx'],
   tsConfig: './tsconfig.json',
   // Type only imports are removed at runtime, so we can ignore them.
@@ -17,7 +17,7 @@ const res = await madge('./src', {
   },
 })
 
-const circular = res.circular()
+const circular = result.circular()
 
 if (circular.length > 0) {
   console.log(circular)

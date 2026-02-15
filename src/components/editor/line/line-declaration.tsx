@@ -1,5 +1,5 @@
-import { EditorLineString } from '~/components/editor/line/line-string'
-import type { LineDeclaration } from '~/types'
+import { EditorLineString } from '@/components/editor/line/line-string'
+import type { LineDeclaration } from '@/types'
 
 interface Props {
   line: LineDeclaration

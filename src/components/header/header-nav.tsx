@@ -5,8 +5,8 @@ import { usePathname } from 'next/navigation'
 import {
   HeaderNavItem,
   type HeaderNavItemProps,
-} from '~/components/header/header-nav-item'
-import { INTERNAL_ROUTE } from '~/navigation'
+} from '@/components/header/header-nav-item'
+import { INTERNAL_ROUTE } from '@/navigation'
 
 const navItems = [
   { label: 'Joe', href: INTERNAL_ROUTE.INDEX },

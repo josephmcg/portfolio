@@ -1,6 +1,6 @@
 import clsx from 'clsx'
 
-import type { LineComment, LineDeclaration, LineStandard } from '~/types'
+import type { LineComment, LineDeclaration, LineStandard } from '@/types'
 
 interface Props {
   line: LineStandard | LineDeclaration | LineComment

@@ -2,7 +2,7 @@ import { ArrowTopRightOnSquareIcon } from '@heroicons/react/24/solid'
 import clsx from 'clsx'
 import Link from 'next/link'
 
-import { INTERNAL_ROUTE } from '~/navigation'
+import { INTERNAL_ROUTE } from '@/navigation'
 
 export interface HeaderNavItemProps {
   label: string

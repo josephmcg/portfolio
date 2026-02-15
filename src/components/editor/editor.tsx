@@ -1,5 +1,5 @@
-import { EditorLine } from '~/components/editor/line/line'
-import type { Line } from '~/types'
+import { EditorLine } from '@/components/editor/line/line'
+import type { Line } from '@/types'
 
 interface Props {
   lines: Line[]

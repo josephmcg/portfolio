@@ -6,7 +6,7 @@ const config = {
   // https://github.com/tailwindlabs/prettier-plugin-tailwindcss/blob/main/README.md
   plugins: ['prettier-plugin-tailwindcss'],
   tailwindFunctions: ['cva', 'cx', 'cn'],
-  // tailwindStylesheet: './src/app/globals.css',
+  tailwindStylesheet: './src/app/globals.css',
 }
 
 export default config

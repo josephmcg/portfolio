@@ -2,7 +2,7 @@
   "extends": "@josephmcg/tsconfig/tsconfig.next.json",
   "compilerOptions": {
     "paths": {
-      "~/*": ["./src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
@@ -10,8 +10,6 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    "reset.d.ts",
-    "scripts/*.*ts",
     "./*.config.*js"
   ],
   "exclude": ["node_modules"]

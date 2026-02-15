@@ -1,19 +1,29 @@
 'use client'
 
+import clsx from 'clsx'
 import { useCallback, useEffect, useState } from 'react'
 
-interface PolygonProps {
+interface PolygonProps extends React.HTMLAttributes<HTMLButtonElement> {
   size: number
   xPos: number
   yPos: number
   rotation: number
-  index: number
 }
 
-const Polygon: React.FC<PolygonProps> = ({ size, xPos, yPos, rotation }) => {
+const Polygon: React.FC<PolygonProps> = ({
+  size,
+  xPos,
+  yPos,
+  rotation,
+  className,
+  ...props
+}) => {
   return (
-    <div
-      className="animate-float bg-opacity-10 absolute cursor-grab bg-white active:cursor-grabbing"
+    <button
+      className={clsx(
+        'absolute animate-float cursor-grab bg-white opacity-10 active:cursor-grabbing',
+        className,
+      )}
       style={{
         width: `${String(size)}px`,
         height: `${String(size)}px`,
@@ -21,6 +31,7 @@ const Polygon: React.FC<PolygonProps> = ({ size, xPos, yPos, rotation }) => {
         left: `${String(xPos)}px`,
         rotate: `${String(rotation)}deg`,
       }}
+      {...props}
     />
   )
 }
@@ -47,7 +58,6 @@ export const Polygons: React.FC = () => {
           xPos,
           yPos,
           rotation,
-          index: index,
         })
       }
 
@@ -111,21 +121,17 @@ export const Polygons: React.FC = () => {
   return (
     <div className="absolute inset-0 overflow-hidden">
       {polygons.map((polygon, index) => (
-        <button
+        <Polygon
           key={index}
+          tabIndex={-1}
           onMouseDown={(event) => {
             handleMouseDown(index, event)
           }}
-          tabIndex={-1}
-        >
-          <Polygon
-            size={polygon.size}
-            xPos={polygon.xPos}
-            yPos={polygon.yPos}
-            rotation={polygon.rotation}
-            index={polygon.index}
-          />
-        </button>
+          size={polygon.size}
+          xPos={polygon.xPos}
+          yPos={polygon.yPos}
+          rotation={polygon.rotation}
+        />
       ))}
     </div>
   )
