@@ -15,12 +15,12 @@ const controls = [
 export const HeaderControls: React.FC = () => {
   return (
     <div className="group flex items-center gap-2">
-      {controls.map((el, i) => (
+      {controls.map((element, index) => (
         <div
-          key={i}
+          key={index}
           className={clsx(
-            'group h-3 w-3 cursor-default rounded-full ring-1 ring-inset ring-black/10',
-            el.classes,
+            'group h-3 w-3 cursor-default rounded-full ring-1 ring-black/10 ring-inset',
+            element.classes,
           )}
         />
       ))}

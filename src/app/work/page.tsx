@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
-import { Editor } from '~/components/editor/editor'
-import { INTERNAL_ROUTE } from '~/navigation'
-import type { Line } from '~/types'
+import { Editor } from '@/components/editor/editor'
+import { INTERNAL_ROUTE } from '@/navigation'
+import type { Line } from '@/types'
 
 export const metadata: Metadata = {
   title: 'Work',
@@ -21,6 +21,7 @@ const lines: Line[] = [
         className="underline hover:text-link"
         href="https://zyphe.com"
         target="_blank"
+        rel="noreferrer"
       >
         https://zyphe.com
       </a>

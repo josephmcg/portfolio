@@ -1,19 +1,29 @@
 'use client'
 
+import clsx from 'clsx'
 import { useCallback, useEffect, useState } from 'react'
 
-interface PolygonProps {
+interface PolygonProps extends React.HTMLAttributes<HTMLButtonElement> {
   size: number
   xPos: number
   yPos: number
   rotation: number
-  index: number
 }
 
-const Polygon: React.FC<PolygonProps> = ({ size, xPos, yPos, rotation }) => {
+const Polygon: React.FC<PolygonProps> = ({
+  size,
+  xPos,
+  yPos,
+  rotation,
+  className,
+  ...props
+}) => {
   return (
-    <div
-      className="absolute animate-float cursor-grab bg-white bg-opacity-10 active:cursor-grabbing"
+    <button
+      className={clsx(
+        'absolute animate-float cursor-grab bg-white opacity-10 active:cursor-grabbing',
+        className,
+      )}
       style={{
         width: `${String(size)}px`,
         height: `${String(size)}px`,
@@ -21,6 +31,7 @@ const Polygon: React.FC<PolygonProps> = ({ size, xPos, yPos, rotation }) => {
         left: `${String(xPos)}px`,
         rotate: `${String(rotation)}deg`,
       }}
+      {...props}
     />
   )
 }
@@ -36,7 +47,7 @@ export const Polygons: React.FC = () => {
     const createPolygons = (): void => {
       const newPolygons: PolygonProps[] = []
 
-      for (let i = 0; i < 20; i++) {
+      for (let index = 0; index < 20; index++) {
         const size = Math.random() * 50 + 50 // Random size between 50px and 100px
         const xPos = Math.random() * window.innerWidth
         const yPos = Math.random() * window.innerHeight
@@ -47,7 +58,6 @@ export const Polygons: React.FC = () => {
           xPos,
           yPos,
           rotation,
-          index: i,
         })
       }
 
@@ -80,9 +90,9 @@ export const Polygons: React.FC = () => {
       const xPos = event.clientX - offset.x
       const yPos = event.clientY - offset.y
 
-      setPolygons((prevPolygons) =>
-        prevPolygons.map((polygon, i) =>
-          i === activePolygon ? { ...polygon, xPos, yPos } : polygon,
+      setPolygons((previousPolygons) =>
+        previousPolygons.map((polygon, index) =>
+          index === activePolygon ? { ...polygon, xPos, yPos } : polygon,
         ),
       )
     },
@@ -111,21 +121,17 @@ export const Polygons: React.FC = () => {
   return (
     <div className="absolute inset-0 overflow-hidden">
       {polygons.map((polygon, index) => (
-        // eslint-disable-next-line jsx-a11y/no-static-element-interactions
-        <div
+        <Polygon
           key={index}
+          tabIndex={-1}
           onMouseDown={(event) => {
             handleMouseDown(index, event)
           }}
-        >
-          <Polygon
-            size={polygon.size}
-            xPos={polygon.xPos}
-            yPos={polygon.yPos}
-            rotation={polygon.rotation}
-            index={polygon.index}
-          />
-        </div>
+          size={polygon.size}
+          xPos={polygon.xPos}
+          yPos={polygon.yPos}
+          rotation={polygon.rotation}
+        />
       ))}
     </div>
   )

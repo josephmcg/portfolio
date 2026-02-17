@@ -1,6 +1,43 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@theme {
+  /* macos window controls */
+  --color-close: #ff605c;
+  --color-minimize: #ffbd44;
+  --color-maximize: #00ca4e;
+  /* background colors */
+  --color-primary: #282c34;
+  --color-secondary: #21252b;
+  --color-divider: rgba(255, 255, 255, 0.18);
+  /* text colors */
+  --color-plain: #abb2bf;
+  --color-light: #9da5b4;
+  --color-dark: #5c6370;
+  /* text accent colors */
+  --color-hue1: #56b6c2;
+  --color-hue2: #61aeee;
+  --color-hue3: #c678dd;
+  --color-hue4: #98c379;
+  --color-hue5: #e06c75;
+  --color-hue5-secondary: #be5046;
+  --color-hue6: #d19a66;
+  --color-hue6-secondary: #e6c07b;
+  --color-link: #4e94ce;
+
+  --animate-float: float 10s ease-in-out infinite;
+
+  @keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-20px) scale(1.1);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+}
 
 :root {
   /* primary color */

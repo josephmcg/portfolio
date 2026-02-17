@@ -1,17 +1,16 @@
 {
-  "extends": "@josephmcg/tsconfig/next.json",
+  "extends": "@josephmcg/tsconfig/tsconfig.next.json",
   "compilerOptions": {
     "paths": {
-      "~/*": ["./src/*"]
+      "@/*": ["./src/*"]
     }
   },
   "include": [
     "next-env.d.ts",
+    ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
-    ".next/types/**/*.ts",
-    "reset.d.ts",
-    "scripts/*.*ts"
+    "./*.config.*js"
   ],
   "exclude": ["node_modules"]
 }

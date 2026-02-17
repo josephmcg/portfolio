@@ -1,8 +1,8 @@
 import clsx from 'clsx'
 import React from 'react'
 
-import { FooterFile } from '~/components/footer/footer-file'
-import { FooterLanguage } from '~/components/footer/footer-language'
+import { FooterFile } from '@/components/footer/footer-file'
+import { FooterLanguage } from '@/components/footer/footer-language'
 
 const TerminalBranch: React.FC = () => {
   return (
@@ -34,8 +34,7 @@ export const Footer: React.FC = () => {
       element: <FooterFile />,
     },
     {
-      // hilarious false positive
-      // eslint-disable-next-line unicorn/text-encoding-identifier-case
+      // eslint-disable-next-line unicorn/text-encoding-identifier-case -- hilarious false positive
       element: 'UTF-8',
       className: clsx('md:ml-auto'),
     },

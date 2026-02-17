@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 
-import { INTERNAL_ROUTE } from '~/navigation'
+import { INTERNAL_ROUTE } from '@/navigation'
 
 export const metadata: Metadata = {
   title: 'Uses',
@@ -148,6 +148,7 @@ export default function Uses(): React.JSX.Element {
                   href={item.url}
                   target="_blank"
                   className="underline hover:opacity-80"
+                  rel="noreferrer"
                 >
                   {item.title}
                 </a>

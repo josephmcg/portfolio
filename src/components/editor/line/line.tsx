@@ -1,7 +1,7 @@
-import { EditorLineComment } from '~/components/editor/line/line-comment'
-import { EditorLineDeclaration } from '~/components/editor/line/line-declaration'
-import { EditorLineString } from '~/components/editor/line/line-string'
-import type { Line, LineStandard } from '~/types'
+import { EditorLineComment } from '@/components/editor/line/line-comment'
+import { EditorLineDeclaration } from '@/components/editor/line/line-declaration'
+import { EditorLineString } from '@/components/editor/line/line-string'
+import type { Line, LineStandard } from '@/types'
 
 interface LineContainerProps {
   lineNumber: number
@@ -12,8 +12,8 @@ const LineContainer: React.FC<React.PropsWithChildren<LineContainerProps>> = ({
   children,
 }) => {
   return (
-    <div className="relative flex px-2 sm:px-4">
-      <div className="w-[4ch] flex-shrink-0 select-none pr-[2ch] text-right text-gray-500/40 md:w-[6ch]">
+    <div className="relative flex px-2 text-wrap sm:px-4">
+      <div className="w-[4ch] shrink-0 pr-[2ch] text-right text-gray-500/40 select-none md:w-[6ch]">
         <span>{lineNumber}</span>
       </div>
       <div className="relative selection:bg-dark/25">{children}</div>
