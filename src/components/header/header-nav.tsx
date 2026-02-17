@@ -6,13 +6,13 @@ import {
   HeaderNavItem,
   type HeaderNavItemProps,
 } from '@/components/header/header-nav-item'
-import { INTERNAL_ROUTE } from '@/navigation'
+import { EXTERNAL_LINK, INTERNAL_LINK } from '@/lib/navigation'
 
 const navItems = [
-  { label: 'Joe', href: INTERNAL_ROUTE.INDEX },
-  { label: 'Work', href: INTERNAL_ROUTE.WORK },
-  { label: 'Uses', href: INTERNAL_ROUTE.USES },
-  { label: 'GitHub', href: 'https://github.com/josephmcg' },
+  { label: 'Joe', href: INTERNAL_LINK.INDEX },
+  { label: 'Work', href: INTERNAL_LINK.WORK },
+  { label: 'Uses', href: INTERNAL_LINK.USES },
+  { label: 'GitHub', href: EXTERNAL_LINK.GITHUB },
 ] as const satisfies Omit<HeaderNavItemProps, 'isActive'>[]
 
 export const HeaderNav: React.FC = () => {

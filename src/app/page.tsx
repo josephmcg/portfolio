@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
 
 import { Editor } from '@/components/editor/editor'
+import { INTERNAL_LINK } from '@/lib/navigation'
 import type { Line } from '@/types'
 
 export const metadata: Metadata = {
   alternates: {
-    canonical: '/',
+    canonical: INTERNAL_LINK.INDEX,
   },
 }
 
