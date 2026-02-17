@@ -6,9 +6,9 @@ const nextConfig = {
   devIndicators: false,
   poweredByHeader: false,
   reactStrictMode: true,
-  typedRoutes: true,
   experimental: {
     typedEnv: true,
+    typedRoutes: true,
     // HMR is totally busted when you add new classes without this rule
     turbopackPersistentCaching: false,
     inlineCss: true,

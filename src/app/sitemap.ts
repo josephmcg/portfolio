@@ -1,8 +1,8 @@
 import type { MetadataRoute } from 'next'
 
-import { INTERNAL_ROUTE } from '@/navigation'
+import { INTERNAL_LINK } from '@/lib/navigation'
 
-const pathnames = Object.values(INTERNAL_ROUTE)
+const pathnames = Object.values(INTERNAL_LINK)
 const host = 'https://josephmcg.dev'
 
 function getUrl(pathname: string): string {

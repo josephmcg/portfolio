@@ -1,13 +1,13 @@
 import type { Metadata } from 'next'
 
-import { INTERNAL_ROUTE } from '@/navigation'
+import { INTERNAL_LINK } from '@/lib/navigation'
 
 export const metadata: Metadata = {
   title: 'Uses',
   description:
     "Discover Joe McGrath's tech setup, from his MacBook Pro and ergonomic desk accessories to his favorite tools for programming and productivity, including VS Code, kitty, Powerlevel10k, and pnpm. Explore the gear that powers his work and daily routines.",
   alternates: {
-    canonical: INTERNAL_ROUTE.USES,
+    canonical: INTERNAL_LINK.USES,
   },
 }
 

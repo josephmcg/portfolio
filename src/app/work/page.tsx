@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 import { Editor } from '@/components/editor/editor'
-import { INTERNAL_ROUTE } from '@/navigation'
+import { INTERNAL_LINK } from '@/lib/navigation'
 import type { Line } from '@/types'
 
 export const metadata: Metadata = {
@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Joe McGrath, Senior Software Engineer at Zyphe, specializes in programming, problem solving, and web performance optimization. With seasoned skills in TypeScript, React, and Vue, Joe leads cross-functional teams to build marketing websites and web applications, while focusing on accessibility and internationalization.',
   alternates: {
-    canonical: INTERNAL_ROUTE.WORK,
+    canonical: INTERNAL_LINK.WORK,
   },
 }
 
