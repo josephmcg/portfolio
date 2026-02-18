@@ -24,7 +24,7 @@
     "lighthouse": "unlighthouse --site https://josephmcg.dev --no-cache"
   },
   "dependencies": {
-    "next": "15.4.10",
+    "next": "15.5.10",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
